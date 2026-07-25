@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 120" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="footer-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Wave Gradients -->
+    <linearGradient id="wave1-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="wave2-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#2563EB" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <linearGradient id="footer-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <filter id="glow-wave">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;family=Inter:wght@400;600;700&amp;display=swap');
+
+      .footer-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        fill: #F8FAFC;
+        letter-spacing: 2px;
+      }
+
+      .footer-sub {
+        font-family: 'Fira Code', monospace;
+        font-size: 12px;
+        fill: #38BDF8;
+      }
+
+      @keyframes waveMotion1 {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-40px); }
+        100% { transform: translateX(0); }
+      }
+
+      @keyframes waveMotion2 {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(40px); }
+        100% { transform: translateX(0); }
+      }
+
+      @keyframes floatParticle {
+        0% { transform: translateY(0); opacity: 0.3; }
+        50% { opacity: 0.9; }
+        100% { transform: translateY(-25px); opacity: 0.1; }
+      }
+
+      .wave1 { animation: waveMotion1 8s ease-in-out infinite; }
+      .wave2 { animation: waveMotion2 10s ease-in-out infinite; }
+      .pt1 { animation: floatParticle 4s ease-in-out infinite; }
+      .pt2 { animation: floatParticle 6s ease-in-out infinite 1.5s; }
+      .pt3 { animation: floatParticle 5s ease-in-out infinite 2.5s; }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect width="920" height="120" rx="12" fill="url(#footer-bg)"/>
+
+  <!-- Top Glowing Border Line -->
+  <line x1="0" y1="0" x2="920" y2="0" stroke="url(#footer-border)" stroke-width="2"/>
+
+  <!-- Neon Wave Paths -->
+  <g filter="url(#glow-wave)">
+    <path class="wave1" d="M -50 90 Q 200 40 460 90 T 970 90" fill="none" stroke="url(#wave1-grad)" stroke-width="2.5"/>
+    <path class="wave2" d="M -50 100 Q 250 55 460 100 T 970 100" fill="none" stroke="url(#wave2-grad)" stroke-width="1.8"/>
+  </g>
+
+  <!-- Floating Particles -->
+  <g fill="#38BDF8">
+    <circle cx="120" cy="80" r="2" class="pt1"/>
+    <circle cx="340" cy="70" r="1.5" class="pt2"/>
+    <circle cx="580" cy="85" r="2.5" class="pt3"/>
+    <circle cx="760" cy="75" r="2" class="pt1"/>
+    <circle cx="850" cy="90" r="1.5" class="pt2"/>
+  </g>
+
+  <!-- Footer Content -->
+  <g transform="translate(460, 42)" text-anchor="middle">
+    <text x="0" y="0" class="footer-title">DESIGNED &amp; ENGINEERED BY ESHWAR J</text>
+    <text x="0" y="24" class="footer-sub">CODE • BUILD • SHIP • REPEAT</text>
+  </g>
+
+  <!-- Outer Border -->
+  <rect width="920" height="120" rx="12" fill="none" stroke="url(#footer-border)" stroke-width="1.2"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 36" width="150" height="36">
+  <defs>
+    <linearGradient id="badge-bg-pt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="badge-border-pt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EE4C2C" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="150" height="36" rx="8" fill="url(#badge-bg-pt)" stroke="url(#badge-border-pt)" stroke-width="1"/>
+  <!-- PyTorch Flame Icon -->
+  <g transform="translate(14, 8)">
+    <rect width="20" height="20" rx="4" fill="#EE4C2C"/>
+    <text x="3" y="14" font-family="'Inter', sans-serif" font-weight="800" font-size="10" fill="#FFFFFF">TOR</text>
+  </g>
+  <text x="44" y="22" font-family="'Inter', sans-serif" font-weight="600" font-size="13" fill="#F8FAFC">PyTorch</text>
+</svg>

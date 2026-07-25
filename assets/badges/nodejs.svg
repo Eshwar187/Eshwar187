@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 36" width="150" height="36">
+  <defs>
+    <linearGradient id="badge-bg-node" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="badge-border-node" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="150" height="36" rx="8" fill="url(#badge-bg-node)" stroke="url(#badge-border-node)" stroke-width="1"/>
+  <!-- Node Icon -->
+  <g transform="translate(14, 8)">
+    <polygon points="10,0 20,5.8 20,17.3 10,23 0,17.3 0,5.8" fill="#5FA04E"/>
+    <text x="5" y="15" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#FFFFFF">JS</text>
+  </g>
+  <text x="44" y="22" font-family="'Inter', sans-serif" font-weight="600" font-size="13" fill="#F8FAFC">Node.js</text>
+</svg>

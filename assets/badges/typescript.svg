@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 36" width="160" height="36">
+  <defs>
+    <linearGradient id="badge-bg-ts" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="badge-border-ts" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="36" rx="8" fill="url(#badge-bg-ts)" stroke="url(#badge-border-ts)" stroke-width="1"/>
+  <!-- TS Icon -->
+  <g transform="translate(14, 8)">
+    <rect width="20" height="20" rx="3" fill="#3178C6"/>
+    <text x="3" y="15" font-family="'Inter', sans-serif" font-weight="800" font-size="12" fill="#FFFFFF">TS</text>
+  </g>
+  <text x="44" y="22" font-family="'Inter', sans-serif" font-weight="600" font-size="13" fill="#F8FAFC">TypeScript</text>
+</svg>
