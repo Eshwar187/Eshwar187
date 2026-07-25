@@ -4,37 +4,49 @@ This repository features a custom design system inspired by **Apple, Stripe, Ver
 
 ---
 
-## 🚀 Hero Section (`assets/hero.svg`)
+## 🚀 1. Hero Banner (`assets/hero.svg`)
 Handcrafted vector graphic featuring animated neural network mesh lines, glassmorphism code terminal, floating operational status indicators, and gradient typography.
 
 ![Hero Banner](assets/hero.svg)
 
 ---
 
-## ⚡ Section Divider (`assets/divider.svg`)
-Glowing neon accent line with center diamond node connecting content sections.
+## 💻 2. About Me Visual Card (`assets/about.svg`)
+Handcrafted glassmorphic code editor SVG graphic complete with syntax highlighting, live telemetry pills, and glowing indicators.
+
+![About Me Card](assets/about.svg)
+
+---
+
+## 🎯 3. Engineering Principles Card (`assets/principles.svg`)
+Sleek 2x2 dark glass grid card showcasing core engineering principles.
+
+![Principles Card](assets/principles.svg)
+
+---
+
+## 🛠️ 4. Technology Stack Matrix (`assets/tech-matrix.svg`)
+Bespoke Vercel/Supabase-style dark glass tech stack matrix card.
+
+![Tech Stack Matrix](assets/tech-matrix.svg)
+
+---
+
+## 💭 5. Engineering Philosophy Card (`assets/philosophy.svg`)
+Custom quote and architecture pillar card.
+
+![Philosophy Card](assets/philosophy.svg)
+
+---
+
+## ⚡ 6. Section Divider (`assets/divider.svg`)
+Glowing neon accent line with center diamond node.
 
 ![Section Divider](assets/divider.svg)
 
 ---
 
-## 🎴 Glassmorphic Card Frame (`assets/glass-card.svg`)
-Reusable glass-style backdrop element with cyan/purple gradient border opacity.
-
-![Glass Card](assets/glass-card.svg)
-
----
-
-## 🌐 Backdrop Grid & Background (`assets/grid.svg` & `assets/background.svg`)
-Cyberpunk ambient glow backdrops for high-contrast presentation.
-
-| Grid Backdrop | Ambient Glow |
-| :---: | :---: |
-| ![Grid](assets/grid.svg) | ![Background](assets/background.svg) |
-
----
-
-## 🛡️ Glassmorphism Badges (`assets/badges/`)
+## 🛡️ 7. Glassmorphism Badges (`assets/badges/`)
 
 | Technology | Badge Asset |
 | :--- | :--- |
@@ -55,7 +67,7 @@ Cyberpunk ambient glow backdrops for high-contrast presentation.
 
 ---
 
-## ⚓ Footer Banner (`assets/footer.svg`)
+## ⚓ 8. Footer Banner (`assets/footer.svg`)
 Animated footer asset with glowing sine waves and drift particles.
 
 ![Footer Banner](assets/footer.svg)

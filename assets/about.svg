@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="100%" height="100%">
+  <defs>
+    <!-- Dark Glass Background Gradient -->
+    <linearGradient id="about-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+
+    <!-- Glass Window Fill -->
+    <linearGradient id="editor-glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Glowing Border -->
+    <linearGradient id="editor-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <radialGradient id="cyan-glow" cx="15%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="purple-glow" cx="85%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="#334155" fill-opacity="0.6"/>
+    </pattern>
+
+    <filter id="subtle-shadow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&amp;family=Inter:wght@400;600;700;800&amp;display=swap');
+
+      .editor-title {
+        font-family: 'Fira Code', monospace;
+        font-size: 12px;
+        fill: #94A3B8;
+      }
+
+      .code-line {
+        font-family: 'Fira Code', monospace;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .kw { fill: #F472B6; font-weight: 600; }
+      .cls { fill: #38BDF8; font-weight: 600; }
+      .str { fill: #A3E635; }
+      .prop { fill: #E2E8F0; }
+      .num { fill: #F59E0B; }
+      .cmnt { fill: #64748B; font-style: italic; }
+
+      @keyframes blinkCursor {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      .cursor {
+        animation: blinkCursor 1s step-start infinite;
+        fill: #38BDF8;
+      }
+    </style>
+  </defs>
+
+  <!-- Base Card Frame -->
+  <rect width="920" height="360" rx="16" fill="url(#about-bg)"/>
+  <rect width="920" height="360" rx="16" fill="url(#dot-grid)"/>
+  <rect width="920" height="360" rx="16" fill="url(#cyan-glow)"/>
+  <rect width="920" height="360" rx="16" fill="url(#purple-glow)"/>
+
+  <!-- Code Editor Window Container -->
+  <g transform="translate(20, 20)">
+    <!-- Shadow & Glow backdrop -->
+    <rect width="880" height="320" rx="12" fill="#000000" fill-opacity="0.5" y="4" filter="url(#subtle-shadow)"/>
+    <rect width="880" height="320" rx="12" fill="url(#editor-glass)" stroke="url(#editor-border)" stroke-width="1.2"/>
+
+    <!-- Window Title Bar -->
+    <rect width="880" height="38" rx="12" fill="#0F172A" fill-opacity="0.9"/>
+    <!-- Controls -->
+    <circle cx="24" cy="19" r="5.5" fill="#EF4444"/>
+    <circle cx="40" cy="19" r="5.5" fill="#F59E0B"/>
+    <circle cx="56" cy="19" r="5.5" fill="#10B981"/>
+
+    <text x="440" y="23" class="editor-title" text-anchor="middle">about.ts — Eshwar J (Senior Engineer Profile)</text>
+
+    <!-- Tab indicator -->
+    <rect x="120" y="8" width="140" height="30" rx="6" fill="#1E293B" fill-opacity="0.7"/>
+    <text x="190" y="27" font-family="'Fira Code', monospace" font-size="11" fill="#38BDF8" text-anchor="middle">⚡ developer.ts</text>
+
+    <line x1="0" y1="38" x2="880" y2="38" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Left Code Panel -->
+    <g transform="translate(24, 60)" class="code-line">
+      <!-- Line Numbers -->
+      <g fill="#475569" font-family="'Fira Code', monospace" font-size="12">
+        <text x="0" y="16">01</text>
+        <text x="0" y="38">02</text>
+        <text x="0" y="60">03</text>
+        <text x="0" y="82">04</text>
+        <text x="0" y="104">05</text>
+        <text x="0" y="126">06</text>
+        <text x="0" y="148">07</text>
+        <text x="0" y="170">08</text>
+        <text x="0" y="192">09</text>
+        <text x="0" y="214">10</text>
+        <text x="0" y="236">11</text>
+      </g>
+
+      <line x1="28" y1="0" x2="28" y2="245" stroke="#1E293B" stroke-width="1"/>
+
+      <!-- Code Content -->
+      <g transform="translate(42, 0)">
+        <text y="16" class="cmnt">// Senior Engineer &amp; Systems Architect</text>
+        
+        <text y="38"><tspan class="kw">class</tspan> <tspan class="cls">EshwarJ</tspan> <tspan class="kw">implements</tspan> <tspan class="cls">FullStackArchitect</tspan> {</text>
+        
+        <text y="60">  <tspan class="kw">readonly</tspan> <tspan class="prop">name</tspan> = <tspan class="str">"Eshwar J"</tspan>;</text>
+        <text y="82">  <tspan class="kw">readonly</tspan> <tspan class="prop">role</tspan> = <tspan class="str">"Full Stack &amp; AI Engineer"</tspan>;</text>
+        <text y="104">  <tspan class="kw">readonly</tspan> <tspan class="prop">mission</tspan> = <tspan class="str">"Building resilient global-scale software"</tspan>;</text>
+        
+        <text y="132">  <tspan class="kw">public readonly</tspan> <tspan class="prop">focusAreas</tspan> = [</text>
+        <text y="154">    <tspan class="str">"Distributed AI Systems &amp; LLM Orchestration"</tspan>,</text>
+        <text y="176">    <tspan class="str">"High-Throughput Microservices (Go / Python / Node)"</tspan>,</text>
+        <text y="198">    <tspan class="str">"Cloud-Native Kubernetes &amp; Event Infrastructure"</tspan></text>
+        <text y="220">  ];<tspan class="cursor">█</tspan></text>
+
+        <text y="242"><tspan class="kw">}</tspan></text>
+      </g>
+    </g>
+
+    <!-- Right Side Telemetry Card Overlay -->
+    <g transform="translate(560, 56)">
+      <rect width="296" height="240" rx="10" fill="#090D16" fill-opacity="0.85" stroke="url(#editor-border)" stroke-width="1"/>
+
+      <g transform="translate(18, 20)">
+        <!-- Header -->
+        <circle cx="6" cy="6" r="5" fill="#10B981"/>
+        <text x="20" y="10" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">SYSTEM TELEMETRY</text>
+
+        <!-- Metrics Cards -->
+        <g transform="translate(0, 26)">
+          <!-- Row 1 -->
+          <rect x="0" y="0" width="125" height="52" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#334155" stroke-width="1"/>
+          <text x="12" y="20" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#64748B">LATENCY TARGET</text>
+          <text x="12" y="40" font-family="'Fira Code', monospace" font-size="15" font-weight="700" fill="#38BDF8">&lt;45ms p99</text>
+
+          <rect x="135" y="0" width="125" height="52" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#334155" stroke-width="1"/>
+          <text x="147" y="20" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#64748B">AVAILABILITY</text>
+          <text x="147" y="40" font-family="'Fira Code', monospace" font-size="15" font-weight="700" fill="#10B981">99.99%</text>
+        </g>
+
+        <!-- Focus Tags -->
+        <g transform="translate(0, 95)">
+          <text x="0" y="10" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#94A3B8" letter-spacing="1">CORE ARCHITECTURE</text>
+          
+          <rect x="0" y="18" width="120" height="24" rx="6" fill="#0F172A" stroke="#2563EB" stroke-width="1"/>
+          <text x="10" y="34" font-family="'Fira Code', monospace" font-size="10" fill="#60A5FA">🧠 AI Orchestration</text>
+
+          <rect x="128" y="18" width="132" height="24" rx="6" fill="#0F172A" stroke="#8B5CF6" stroke-width="1"/>
+          <text x="138" y="34" font-family="'Fira Code', monospace" font-size="10" fill="#C084FC">⚡ Microservices</text>
+
+          <rect x="0" y="48" width="110" height="24" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1"/>
+          <text x="10" y="64" font-family="'Fira Code', monospace" font-size="10" fill="#38BDF8">☁️ Cloud Native</text>
+
+          <rect x="118" y="48" width="142" height="24" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="1"/>
+          <text x="128" y="64" font-family="'Fira Code', monospace" font-size="10" fill="#34D399">🛡️ Zero-Trust Infra</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Outer Border -->
+  <rect width="920" height="360" rx="16" fill="none" stroke="url(#editor-border)" stroke-width="1.5"/>
+</svg>

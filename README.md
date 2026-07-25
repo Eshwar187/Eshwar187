@@ -1,18 +1,18 @@
 <div align="center">
 
-  <!-- Hero Section SVG -->
-  <img src="assets/hero.svg" alt="Eshwar J - Hero Banner" width="100%" />
+  <!-- Hero Section Animated SVG -->
+  <img src="assets/hero.svg" alt="Eshwar J — Full Stack & AI Engineer" width="100%" />
 
   <br/><br/>
 
   <!-- Dynamic Typing Animation Banner -->
   <a href="https://github.com/eshwar187">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&repeat=true&width=700&height=45&lines=Architecting+Scalable+Cloud+Native+Systems;Building+Intelligent+AI-Powered+Applications;Full+Stack+Engineering+%E2%80%A2+Performance-Driven;Code.+Build.+Ship.+Scale." alt="Typing Animation" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&repeat=true&width=750&height=45&lines=Architecting+Scalable+Cloud+Native+Systems;Building+Intelligent+AI-Powered+Applications;Full+Stack+Engineering+%E2%80%A2+Performance-Driven;Code.+Build.+Ship.+Scale." alt="Typing Banner" />
   </a>
 
   <br/><br/>
 
-  <!-- Social & Action Badges (Glassmorphic Theme) -->
+  <!-- Social & Action Badges -->
   <a href="https://linkedin.com">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=0F172A" alt="LinkedIn"/>
   </a>
@@ -31,144 +31,81 @@
 
   <br/><br/>
 
-  <!-- Section Divider -->
+  <!-- Divider -->
   <img src="assets/divider.svg" width="100%" />
 
 </div>
 
 <br/>
 
-## ⚡ About Me
-
-```typescript
-class Developer implements SeniorEngineer {
-  readonly name     : string   = "Eshwar J";
-  readonly role     : string   = "Full Stack & AI Systems Engineer";
-  readonly location : string   = "Global / Remote";
-  readonly passion  : string   = "Designing resilient, high-throughput software architectures";
-
-  public readonly coreFocus: String[] = [
-    "AI Agent Orchestration & LLM Infrastructure",
-    "High-Performance Microservices (Go / Node / Python)",
-    "Cloud Native Infrastructure & Kubernetes Systems",
-    "Modern Reactive User Interfaces (Next.js / React)"
-  ];
-
-  public getCurrentMindset(): OperationalStrategy {
-    return {
-      codeQuality  : "Zero compromise on type-safety, modularity, and testing",
-      performance  : "Optimizing for sub-50ms p99 latencies and high availability",
-      architecture : "Event-driven, domain-centric, and horizontally scalable"
-    };
-  }
-}
-```
+<!-- ABOUT ME SECTION (Top 1% Handcrafted Visual Card) -->
+<div align="center">
+  <img src="assets/about.svg" alt="About Eshwar J — Senior Engineer" width="100%" />
+</div>
 
 <br/>
 
 <div align="center">
-  <!-- Section Divider -->
   <img src="assets/divider.svg" width="100%" />
 </div>
 
 <br/>
 
-## 🎯 Engineering Principles
-
-<table>
-  <tr>
-    <td width="50%" fill="#0F172A">
-      <h3 align="left">⚡ Scalability First</h3>
-      <p align="left">Designing systems from day one to handle exponential load without degradation. Prioritizing stateless microservices, asynchronous processing, and intelligent caching patterns.</p>
-    </td>
-    <td width="50%" fill="#0F172A">
-      <h3 align="left">🧠 Systems Thinking</h3>
-      <p align="left">Understanding complex dependency chains across backend pipelines, cloud infrastructure, network boundaries, and client UI render phases.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" fill="#0F172A">
-      <h3 align="left">🛡️ Clean Architecture</h3>
-      <p align="left">Enforcing strict separation of concerns, strict type-safety, comprehensive integration testing, and defensive programming workflows.</p>
-    </td>
-    <td width="50%" fill="#0F172A">
-      <h3 align="left">🚀 Velocity & Precision</h3>
-      <p align="left">Combining fast iterative execution with production-grade engineering rigor. Automated CI/CD, telemetry, and self-healing infrastructure.</p>
-    </td>
-  </tr>
-</table>
+<!-- ENGINEERING PRINCIPLES SECTION (Visual 2x2 Dark Glass Card) -->
+<div align="center">
+  <img src="assets/principles.svg" alt="Engineering Principles" width="100%" />
+</div>
 
 <br/>
 
 <div align="center">
-  <!-- Section Divider -->
   <img src="assets/divider.svg" width="100%" />
 </div>
 
 <br/>
 
-## 🛠️ Technology Stack
-
+<!-- TECHNOLOGY MATRIX SECTION (Visual Grid & Glass Badges) -->
 <div align="center">
+  
+  <img src="assets/tech-matrix.svg" alt="Technology Stack Matrix" width="100%" />
 
-### 💻 Languages
-<a href="#technology-stack"><img src="assets/badges/typescript.svg" alt="TypeScript"/></a> &nbsp;
-<a href="#technology-stack"><img src="assets/badges/python.svg" alt="Python"/></a> &nbsp;
-<a href="#technology-stack"><img src="assets/badges/golang.svg" alt="Go"/></a> &nbsp;
-<a href="#technology-stack"><img src="assets/badges/rust.svg" alt="Rust"/></a>
+  <br/><br/>
 
-<br/>
-
-### 🎨 Frontend & UI
-<a href="#technology-stack"><img src="assets/badges/nextjs.svg" alt="Next.js"/></a> &nbsp;
-<a href="#technology-stack"><img src="assets/badges/react.svg" alt="React"/></a> &nbsp;
-<a href="#technology-stack"><img src="assets/badges/tailwind.svg" alt="Tailwind CSS"/></a>
-
-<br/>
-
-### ⚙️ Backend & APIs
-<a href="#technology-stack"><img src="assets/badges/nodejs.svg" alt="Node.js"/></a> &nbsp;
-<a href="#technology-stack"><img src="assets/badges/graphql.svg" alt="GraphQL"/></a> &nbsp;
-<a href="#technology-stack"><img src="assets/badges/postgresql.svg" alt="PostgreSQL"/></a>
-
-<br/>
-
-### 🤖 AI & Machine Learning
-<a href="#technology-stack"><img src="assets/badges/pytorch.svg" alt="PyTorch"/></a> &nbsp;
-<img src="https://img.shields.io/badge/OpenAI_API-000000?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI"/> &nbsp;
-<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" alt="LangChain"/>
-
-<br/>
-
-### ☁️ Cloud & DevOps
-<a href="#technology-stack"><img src="assets/badges/aws.svg" alt="AWS"/></a> &nbsp;
-<a href="#technology-stack"><img src="assets/badges/docker.svg" alt="Docker"/></a> &nbsp;
-<a href="#technology-stack"><img src="assets/badges/kubernetes.svg" alt="Kubernetes"/></a>
+  <!-- Individual Glassmorphism Badges Row -->
+  <a href="#technology-matrix"><img src="assets/badges/typescript.svg" alt="TypeScript"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/python.svg" alt="Python"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/golang.svg" alt="Go"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/rust.svg" alt="Rust"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/nextjs.svg" alt="Next.js"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/react.svg" alt="React"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/tailwind.svg" alt="Tailwind CSS"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/nodejs.svg" alt="Node.js"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/postgresql.svg" alt="PostgreSQL"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/docker.svg" alt="Docker"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/aws.svg" alt="AWS"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/pytorch.svg" alt="PyTorch"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/kubernetes.svg" alt="Kubernetes"/></a> &nbsp;
+  <a href="#technology-matrix"><img src="assets/badges/graphql.svg" alt="GraphQL"/></a>
 
 </div>
 
 <br/>
 
 <div align="center">
-  <!-- Section Divider -->
   <img src="assets/divider.svg" width="100%" />
 </div>
 
 <br/>
 
-## 📊 Developer Dashboard & GitHub Analytics
-
+<!-- DEVELOPER DASHBOARD & GITHUB ANALYTICS -->
 <div align="center">
 
-  <!-- GitHub Readme Stats (Custom Dark Cyan Theme) -->
   <img src="https://github-readme-stats.vercel.app/api?username=eshwar187&show_icons=true&theme=synthwave&title_color=38BDF8&icon_color=38BDF8&text_color=94A3B8&bg_color=020617&border_color=1E293B&hide_border=false" width="49%" alt="GitHub Stats"/>
   &nbsp;
-  <!-- Top Languages Stats -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eshwar187&layout=compact&theme=synthwave&title_color=8B5CF6&text_color=94A3B8&bg_color=020617&border_color=1E293B&hide_border=false" width="47%" alt="Top Languages"/>
 
   <br/><br/>
 
-  <!-- GitHub Streak Stats -->
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=eshwar187&theme=dark&background=020617&border=1E293B&stroke=2563EB&ring=38BDF8&fire=8B5CF6&currStreakNum=38BDF8&sidenums=94A3B8&sidelabels=64748B&dates=38BDF8" width="97%" alt="GitHub Streak Stats" />
 
 </div>
@@ -176,21 +113,14 @@ class Developer implements SeniorEngineer {
 <br/>
 
 <div align="center">
-  <!-- Section Divider -->
   <img src="assets/divider.svg" width="100%" />
 </div>
 
 <br/>
 
-## 🐍 Contribution Graph & Activity Matrix
-
+<!-- CONTRIBUTION MATRIX & SNAKE ANIMATION -->
 <div align="center">
-  
-  <p align="center">
-    <strong>Daily Automated Contribution Grid</strong>
-  </p>
 
-  <!-- GitHub Contribution Snake Animation -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/eshwar187/eshwar187/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/eshwar187/eshwar187/output/github-contribution-grid-snake.svg">
@@ -202,42 +132,19 @@ class Developer implements SeniorEngineer {
 <br/>
 
 <div align="center">
-  <!-- Section Divider -->
   <img src="assets/divider.svg" width="100%" />
 </div>
 
 <br/>
 
-## 💭 Engineering Philosophy
-
+<!-- ENGINEERING PHILOSOPHY CARD -->
 <div align="center">
-
-> *"Simplicity is a prerequisite for reliability. Complex systems always evolve from simple systems that worked."*
-
-<br/>
-
-<table>
-  <tr>
-    <td align="center" width="33%">
-      <h4>🧱 Modularity</h4>
-      <p>Decoupled systems with crisp contracts reduce cognitive load and blast radius.</p>
-    </td>
-    <td align="center" width="33%">
-      <h4>🚀 Observability</h4>
-      <p>Telemetry, structured logs, and metrics provide immediate operational clarity.</p>
-    </td>
-    <td align="center" width="33%">
-      <h4>⚡ Precision</h4>
-      <p>Automate everything repetitive. Focus human talent on high-leverage architectural design.</p>
-    </td>
-  </tr>
-</table>
-
+  <img src="assets/philosophy.svg" alt="Engineering Philosophy" width="100%" />
 </div>
 
 <br/><br/>
 
-<!-- Footer Section -->
+<!-- FOOTER ANIMATED SVG BANNER -->
 <div align="center">
   <img src="assets/footer.svg" alt="Footer Banner" width="100%" />
 </div>
