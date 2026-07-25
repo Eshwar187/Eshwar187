@@ -97,16 +97,14 @@
 
 <br/>
 
-<!-- DEVELOPER DASHBOARD & GITHUB ANALYTICS -->
+<!-- DEVELOPER DASHBOARD & GITHUB ANALYTICS (Handcrafted Local SVG Cards) -->
 <div align="center">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=eshwar187&show_icons=true&theme=synthwave&title_color=38BDF8&icon_color=38BDF8&text_color=94A3B8&bg_color=020617&border_color=1E293B&hide_border=false" width="49%" alt="GitHub Stats"/>
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eshwar187&layout=compact&theme=synthwave&title_color=8B5CF6&text_color=94A3B8&bg_color=020617&border_color=1E293B&hide_border=false" width="47%" alt="Top Languages"/>
+  <img src="assets/dashboard.svg" alt="Developer Dashboard & Impact Metrics" width="100%" />
 
   <br/><br/>
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=eshwar187&theme=dark&background=020617&border=1E293B&stroke=2563EB&ring=38BDF8&fire=8B5CF6&currStreakNum=38BDF8&sidenums=94A3B8&sidelabels=64748B&dates=38BDF8" width="97%" alt="GitHub Streak Stats" />
+  <img src="assets/streak.svg" alt="Activity Streaks & Velocity" width="100%" />
 
 </div>
 
