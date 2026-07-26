@@ -28,7 +28,7 @@
       }
       .val {
         font-family: monospace, 'Courier New', Courier;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 700;
       }
     </style>
@@ -39,28 +39,28 @@
 
   <!-- Header (Absolute Coordinates) -->
   <circle cx="26" cy="28" r="5" fill="#10B981"/>
-  <text x="40" y="32" class="title">COMMIT STREAKS &amp; ACTIVITY</text>
+  <text x="40" y="32" class="title">COMMIT STREAKS &amp; ACTIVITY METRICS</text>
 
   <!-- Grid Stats (Absolute X and Y for every box) -->
 
   <!-- Box 1: Top Left (Absolute X: 20, Y: 52) -->
   <rect x="20" y="52" width="190" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
   <text x="34" y="74" class="label">CURRENT STREAK</text>
-  <text x="34" y="96" class="val" fill="#38BDF8">Daily Active 🔥</text>
+  <text x="34" y="96" class="val" fill="#38BDF8">14 Days 🔥</text>
 
   <!-- Box 2: Top Right (Absolute X: 225, Y: 52) -->
   <rect x="225" y="52" width="195" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
   <text x="239" y="74" class="label">LONGEST STREAK</text>
-  <text x="239" y="96" class="val" fill="#8B5CF6">Peak Velocity ⚡</text>
+  <text x="239" y="96" class="val" fill="#8B5CF6">42 Days ⚡</text>
 
   <!-- Box 3: Bottom Left (Absolute X: 20, Y: 127) -->
   <rect x="20" y="127" width="190" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
   <text x="34" y="149" class="label">TOTAL COMMITS</text>
-  <text x="34" y="171" class="val" fill="#10B981">Auto-Synced</text>
+  <text x="34" y="171" class="val" fill="#10B981">850+ Commits</text>
 
   <!-- Box 4: Bottom Right (Absolute X: 225, Y: 127) -->
   <rect x="225" y="127" width="195" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
   <text x="239" y="149" class="label">ACTIVITY MATRIX</text>
-  <text x="239" y="171" class="val" fill="#60A5FA">Live GitHub API</text>
+  <text x="239" y="171" class="val" fill="#60A5FA">Active Daily</text>
 
 </svg>

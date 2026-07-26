@@ -28,7 +28,7 @@
       }
       .val {
         font-family: monospace, 'Courier New', Courier;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 700;
       }
     </style>
@@ -44,17 +44,17 @@
   <!-- Box 1: Top Left (Absolute X: 20, Y: 52) -->
   <rect x="20" y="52" width="190" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
   <text x="34" y="74" class="label">REPOSITORIES</text>
-  <text x="34" y="96" class="val" fill="#38BDF8">Public Profile</text>
+  <text x="34" y="96" class="val" fill="#38BDF8">18 Repos</text>
 
   <!-- Box 2: Top Right (Absolute X: 225, Y: 52) -->
   <rect x="225" y="52" width="195" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
   <text x="239" y="74" class="label">CONTRIBUTIONS</text>
-  <text x="239" y="96" class="val" fill="#8B5CF6">Active Developer</text>
+  <text x="239" y="96" class="val" fill="#8B5CF6">850+ Commits</text>
 
   <!-- Box 3: Bottom Left (Absolute X: 20, Y: 127) -->
   <rect x="20" y="127" width="190" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
   <text x="34" y="149" class="label">ACCOUNT STATUS</text>
-  <text x="34" y="171" class="val" fill="#10B981">Verified GitHub</text>
+  <text x="34" y="171" class="val" fill="#10B981">Verified Dev</text>
 
   <!-- Box 4: Bottom Right (Absolute X: 225, Y: 127) -->
   <rect x="225" y="127" width="195" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
