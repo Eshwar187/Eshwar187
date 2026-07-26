@@ -1,6 +1,6 @@
 <div align="center">
 
-  <!-- Hero Section Animated SVG -->
+  <!-- Hero Section Animated SVG (Inspired by Image 3) -->
   <img src="assets/hero.svg" alt="Eshwar J — Full Stack & AI Engineer" width="100%" />
 
   <br/><br/>
@@ -12,7 +12,7 @@
 
   <br/><br/>
 
-  <!-- Verified Social & Action Badges (Twitter Removed, Instagram & Real Links Added) -->
+  <!-- Verified Personal Social & Action Badges -->
   <a href="https://www.linkedin.com/in/eshwar-j-7b8854289/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=0F172A" alt="LinkedIn"/>
   </a>
@@ -31,16 +31,16 @@
 
   <br/><br/>
 
-  <!-- Divider -->
+  <!-- Section Divider -->
   <img src="assets/divider.svg" width="100%" />
 
 </div>
 
 <br/>
 
-<!-- ABOUT ME SECTION (Top 1% Handcrafted Visual Card) -->
+<!-- ABOUT ME SECTION (Pure Visual Dashboard Card inspired by Image 4) -->
 <div align="center">
-  <img src="assets/about.svg" alt="About Eshwar J — Senior Engineer" width="100%" />
+  <img src="assets/about.svg" alt="Architectural Capabilities & System Landscape" width="100%" />
 </div>
 
 <br/>
@@ -97,18 +97,31 @@
 
 <br/>
 
-<!-- GITHUB ACTIONS REAL DATA 2x2 ANALYTICS GRID (100% Guaranteed Zero Broken Images) -->
+<!-- REAL LIVE GITHUB DASHBOARD & ANALYTICS (Pulls 100% Real Live Data for user: eshwar187) -->
 <div align="center">
 
-  <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" width="49%" alt="GitHub Profile Details for eshwar187"/>
+  <!-- Live GitHub Readme Stats & Top Languages -->
+  <a href="https://github.com/eshwar187">
+    <img src="https://github-readme-stats.vercel.app/api?username=eshwar187&show_icons=true&theme=synthwave&title_color=38BDF8&icon_color=38BDF8&text_color=94A3B8&bg_color=020617&border_color=1E293B&hide_border=false" width="49%" alt="GitHub Stats for eshwar187"/>
+  </a>
   &nbsp;
-  <img src="profile-summary-card-output/tokyonight/1-repos-per-language.svg" width="47%" alt="Language Distribution for eshwar187"/>
+  <a href="https://github.com/eshwar187">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eshwar187&layout=compact&theme=synthwave&title_color=8B5CF6&text_color=94A3B8&bg_color=020617&border_color=1E293B&hide_border=false" width="47%" alt="Top Languages for eshwar187"/>
+  </a>
 
   <br/><br/>
 
-  <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" alt="Most Committed Language for eshwar187"/>
-  &nbsp;
-  <img src="profile-summary-card-output/tokyonight/3-stats.svg" width="47%" alt="Commit Streaks and Velocity for eshwar187"/>
+  <!-- Live GitHub Streak Stats -->
+  <a href="https://github.com/eshwar187">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=eshwar187&theme=dark&background=020617&border=1E293B&stroke=2563EB&ring=38BDF8&fire=8B5CF6&currStreakNum=38BDF8&sidenums=94A3B8&sidelabels=64748B&dates=38BDF8" width="97%" alt="GitHub Streak Stats for eshwar187" />
+  </a>
+
+  <br/><br/>
+
+  <!-- Live GitHub Activity Graph -->
+  <a href="https://github.com/eshwar187">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=eshwar187&theme=react-dark&bg_color=020617&color=38BDF8&line=2563EB&point=8B5CF6&area=true&hide_border=true" width="97%" alt="Activity Graph for eshwar187" />
+  </a>
 
 </div>
 

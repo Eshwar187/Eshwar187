@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="100%">
   <defs>
     <!-- Dark Glass Background Gradient -->
     <linearGradient id="about-bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -7,154 +7,117 @@
       <stop offset="100%" stop-color="#090D16"/>
     </linearGradient>
 
-    <!-- Glass Window Fill -->
-    <linearGradient id="editor-glass" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Glass Card Fill -->
+    <linearGradient id="card-glass" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1E293B" stop-opacity="0.85"/>
       <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
     </linearGradient>
 
-    <!-- Glowing Border -->
-    <linearGradient id="editor-border" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Glowing Borders -->
+    <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.7"/>
       <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2"/>
     </linearGradient>
 
     <radialGradient id="cyan-glow" cx="15%" cy="20%" r="50%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
     </radialGradient>
 
     <radialGradient id="purple-glow" cx="85%" cy="80%" r="50%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.25"/>
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
 
-    <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="12" cy="12" r="0.8" fill="#334155" fill-opacity="0.6"/>
-    </pattern>
-
-    <filter id="subtle-shadow">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-
     <style>
-      .editor-title {
-        font-family: monospace, 'Courier New', Courier;
-        font-size: 12px;
+      .hdr-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 15px;
+        fill: #FFFFFF;
+        letter-spacing: 1.5px;
+      }
+      .card-hdr {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+      }
+      .card-desc {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 11px;
         fill: #94A3B8;
+        line-height: 1.4;
       }
 
-      .code-line {
-        font-family: monospace, 'Courier New', Courier;
-        font-size: 12px;
+      @keyframes wavePulse {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 0.8; }
       }
 
-      .kw { fill: #F472B6; font-weight: 600; }
-      .cls { fill: #38BDF8; font-weight: 600; }
-      .str { fill: #A3E635; }
-      .prop { fill: #E2E8F0; }
-      .cmnt { fill: #64748B; font-style: italic; }
-
-      @keyframes blinkCursor {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-      }
-
-      .cursor {
-        animation: blinkCursor 1s step-start infinite;
-        fill: #38BDF8;
-      }
+      .wave-anim { animation: wavePulse 4s ease-in-out infinite; }
     </style>
   </defs>
 
   <!-- Base Card Frame -->
-  <rect width="920" height="360" rx="16" fill="url(#about-bg)"/>
-  <rect width="920" height="360" rx="16" fill="url(#dot-grid)"/>
-  <rect width="920" height="360" rx="16" fill="url(#cyan-glow)"/>
-  <rect width="920" height="360" rx="16" fill="url(#purple-glow)"/>
+  <rect width="920" height="340" rx="16" fill="url(#about-bg)"/>
+  <rect width="920" height="340" rx="16" fill="url(#cyan-glow)"/>
+  <rect width="920" height="340" rx="16" fill="url(#purple-glow)"/>
 
-  <!-- Code Editor Window Container -->
-  <g transform="translate(20, 20)">
-    <rect width="880" height="320" rx="12" fill="#000000" fill-opacity="0.5" y="4" filter="url(#subtle-shadow)"/>
-    <rect width="880" height="320" rx="12" fill="url(#editor-glass)" stroke="url(#editor-border)" stroke-width="1.2"/>
+  <!-- Top Header Section -->
+  <circle cx="36" cy="35" r="6" fill="#38BDF8"/>
+  <text x="52" y="40" class="hdr-title">ARCHITECTURAL CAPABILITIES &amp; ENGINEERING LANDSCAPE</text>
 
-    <!-- Window Title Bar -->
-    <rect width="880" height="38" rx="12" fill="#0F172A" fill-opacity="0.9"/>
-    <circle cx="24" cy="19" r="5.5" fill="#EF4444"/>
-    <circle cx="40" cy="19" r="5.5" fill="#F59E0B"/>
-    <circle cx="56" cy="19" r="5.5" fill="#10B981"/>
+  <!-- 4 Pure Visual Dashboard Cards (2x2 Grid) -->
 
-    <text x="440" y="23" class="editor-title" text-anchor="middle">about.ts — Eshwar J (Senior Engineer Profile)</text>
+  <!-- Card 1: AI Agent Architecture (Top-Left: X: 30, Y: 60) -->
+  <rect x="30" y="60" width="415" height="110" rx="10" fill="url(#card-glass)" stroke="url(#border-glow)" stroke-width="1.2"/>
+  <circle cx="56" cy="90" r="14" fill="#8B5CF6" fill-opacity="0.2"/>
+  <text x="50" y="95" font-family="sans-serif" font-size="14">🧠</text>
+  <text x="80" y="88" class="card-hdr" fill="#8B5CF6">AI AGENT &amp; LLM ARCHITECTURE</text>
+  <text x="80" y="106" class="card-desc">Autonomous multi-agent orchestration, RAG vector pipelines,</text>
+  <text x="80" y="122" class="card-desc">and custom PyTorch / OpenAI model integration.</text>
 
-    <!-- Tab indicator -->
-    <rect x="120" y="8" width="140" height="30" rx="6" fill="#1E293B" fill-opacity="0.7"/>
-    <text x="190" y="27" font-family="monospace" font-size="11" fill="#38BDF8" text-anchor="middle">⚡ developer.ts</text>
+  <!-- Visual Progress Meter 1 -->
+  <rect x="80" y="136" width="340" height="8" rx="4" fill="#0F172A"/>
+  <rect x="80" y="136" width="310" height="8" rx="4" fill="#8B5CF6"/>
 
-    <line x1="0" y1="38" x2="880" y2="38" stroke="#1E293B" stroke-width="1"/>
+  <!-- Card 2: Distributed Systems (Top-Right: X: 475, Y: 60) -->
+  <rect x="475" y="60" width="415" height="110" rx="10" fill="url(#card-glass)" stroke="url(#border-glow)" stroke-width="1.2"/>
+  <circle cx="501" cy="90" r="14" fill="#38BDF8" fill-opacity="0.2"/>
+  <text x="495" y="95" font-family="sans-serif" font-size="14">⚡</text>
+  <text x="525" y="88" class="card-hdr" fill="#38BDF8">HIGH-THROUGHPUT MICROSERVICES</text>
+  <text x="525" y="106" class="card-desc">Event-driven backend services in Go &amp; Node.js designed</text>
+  <text x="525" y="122" class="card-desc">for sub-50ms p99 latency targets and zero data loss.</text>
 
-    <!-- Left Code Panel (Explicit Y offsets to prevent overlap) -->
-    <g transform="translate(24, 60)" class="code-line">
-      <!-- Line Numbers -->
-      <g fill="#475569" font-family="monospace" font-size="12">
-        <text x="0" y="16">01</text>
-        <text x="0" y="38">02</text>
-        <text x="0" y="60">03</text>
-        <text x="0" y="82">04</text>
-        <text x="0" y="104">05</text>
-        <text x="0" y="126">06</text>
-        <text x="0" y="148">07</text>
-        <text x="0" y="170">08</text>
-        <text x="0" y="192">09</text>
-        <text x="0" y="214">10</text>
-        <text x="0" y="236">11</text>
-      </g>
+  <!-- Visual Progress Meter 2 -->
+  <rect x="525" y="136" width="340" height="8" rx="4" fill="#0F172A"/>
+  <rect x="525" y="136" width="325" height="8" rx="4" fill="#38BDF8"/>
 
-      <line x1="28" y1="0" x2="28" y2="245" stroke="#1E293B" stroke-width="1"/>
+  <!-- Card 3: Cloud Native Infra (Bottom-Left: X: 30, Y: 190) -->
+  <rect x="30" y="190" width="415" height="110" rx="10" fill="url(#card-glass)" stroke="url(#border-glow)" stroke-width="1.2"/>
+  <circle cx="56" cy="220" r="14" fill="#10B981" fill-opacity="0.2"/>
+  <text x="50" y="225" font-family="sans-serif" font-size="14">☁️</text>
+  <text x="80" y="218" class="card-hdr" fill="#10B981">CLOUD NATIVE INFRASTRUCTURE</text>
+  <text x="80" y="236" class="card-desc">Kubernetes container orchestration, Docker automation,</text>
+  <text x="80" y="252" class="card-desc">AWS IaC with Terraform, and self-healing telemetry.</text>
 
-      <!-- Code Content -->
-      <g transform="translate(42, 0)">
-        <text x="0" y="16" class="cmnt">// Senior Engineer &amp; Systems Architect</text>
-        <text x="0" y="38"><tspan class="kw">class</tspan> <tspan class="cls">EshwarJ</tspan> <tspan class="kw">implements</tspan> <tspan class="cls">FullStackArchitect</tspan> {</text>
-        <text x="0" y="60">  <tspan class="kw">readonly</tspan> <tspan class="prop">name</tspan> = <tspan class="str">"Eshwar J"</tspan>;</text>
-        <text x="0" y="82">  <tspan class="kw">readonly</tspan> <tspan class="prop">role</tspan> = <tspan class="str">"Full Stack &amp; AI Engineer"</tspan>;</text>
-        <text x="0" y="104">  <tspan class="kw">readonly</tspan> <tspan class="prop">mission</tspan> = <tspan class="str">"Building resilient global-scale software"</tspan>;</text>
-        <text x="0" y="132">  <tspan class="kw">public readonly</tspan> <tspan class="prop">focusAreas</tspan> = [</text>
-        <text x="0" y="154">    <tspan class="str">"Distributed AI Systems &amp; LLM Orchestration"</tspan>,</text>
-        <text x="0" y="176">    <tspan class="str">"High-Throughput Microservices (Go / Python / Node)"</tspan>,</text>
-        <text x="0" y="198">    <tspan class="str">"Cloud-Native Kubernetes &amp; Event Infrastructure"</tspan></text>
-        <text x="0" y="220">  ];<tspan class="cursor">█</tspan></text>
-        <text x="0" y="242"><tspan class="kw">}</tspan></text>
-      </g>
-    </g>
+  <!-- Visual Progress Meter 3 -->
+  <rect x="80" y="266" width="340" height="8" rx="4" fill="#0F172A"/>
+  <rect x="80" y="266" width="295" height="8" rx="4" fill="#10B981"/>
 
-    <!-- Right Side Architecture Focus Panel -->
-    <g transform="translate(560, 56)">
-      <rect width="296" height="240" rx="10" fill="#090D16" fill-opacity="0.85" stroke="url(#editor-border)" stroke-width="1"/>
+  <!-- Card 4: Modern Web Experience (Bottom-Right: X: 475, Y: 190) -->
+  <rect x="475" y="190" width="415" height="110" rx="10" fill="url(#card-glass)" stroke="url(#border-glow)" stroke-width="1.2"/>
+  <circle cx="501" cy="220" r="14" fill="#60A5FA" fill-opacity="0.2"/>
+  <text x="495" y="225" font-family="sans-serif" font-size="14">🎨</text>
+  <text x="525" y="218" class="card-hdr" fill="#60A5FA">MODERN REACTIVE USER INTERFACES</text>
+  <text x="525" y="236" class="card-desc">High-performance Next.js 15, React 19, &amp; Tailwind CSS</text>
+  <text x="525" y="252" class="card-desc">fluid design systems with glassmorphic motion graphics.</text>
 
-      <g transform="translate(18, 20)">
-        <!-- Header -->
-        <circle cx="6" cy="6" r="5" fill="#10B981"/>
-        <text x="20" y="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">ARCHITECTURAL FOCUS</text>
-
-        <g transform="translate(0, 30)">
-          <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#38BDF8">⚡ Distributed Systems</text>
-          <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94A3B8">High-throughput microservices in Go &amp; Node</text>
-
-          <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#8B5CF6">🧠 AI &amp; Agent Pipelines</text>
-          <text x="0" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94A3B8">LLM workflows, RAG, &amp; Python ML models</text>
-
-          <text x="0" y="116" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#10B981">☁️ Cloud Native Infrastructure</text>
-          <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94A3B8">Kubernetes, Docker, &amp; AWS automation</text>
-
-          <text x="0" y="166" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#60A5FA">🎨 Modern User Experience</text>
-          <text x="0" y="182" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94A3B8">Reactive Next.js, React 19, &amp; Tailwind CSS</text>
-        </g>
-      </g>
-    </g>
-  </g>
+  <!-- Visual Progress Meter 4 -->
+  <rect x="525" y="266" width="340" height="8" rx="4" fill="#0F172A"/>
+  <rect x="525" y="266" width="330" height="8" rx="4" fill="#60A5FA"/>
 
   <!-- Outer Border -->
-  <rect width="920" height="360" rx="16" fill="none" stroke="url(#editor-border)" stroke-width="1.5"/>
+  <rect width="920" height="340" rx="16" fill="none" stroke="url(#border-glow)" stroke-width="1.5"/>
 </svg>

@@ -5,14 +5,14 @@ This repository features a custom design system inspired by **Apple, Stripe, Ver
 ---
 
 ## 🚀 1. Hero Banner (`assets/hero.svg`)
-Handcrafted vector graphic featuring animated neural network mesh lines, glassmorphism code terminal, floating operational status indicators, and gradient typography.
+Top-tier cyberpunk vector graphic featuring large glowing **ESHWAR J** typography, subheader (`AI ENGINEER | CLOUD NATIVE BUILDER | PROBLEM SOLVER`), floating feature cards (*BUILD*, *DESIGN*, *INTELLIGENCE*, *DEPLOY*), terminal window (`> Code. > Build. > Ship. > Repeat.`), and tech pillar chips.
 
 ![Hero Banner](assets/hero.svg)
 
 ---
 
-## 💻 2. About Me Visual Card (`assets/about.svg`)
-Handcrafted glassmorphic code editor SVG graphic complete with syntax highlighting, live telemetry pills, and glowing indicators.
+## 💻 2. About Me Visual Dashboard Card (`assets/about.svg`)
+Top-notch pure visual animated dashboard card showcasing architectural capabilities (*AI Agent Architecture*, *High-Throughput Microservices*, *Cloud Native Infrastructure*, *Modern Reactive Interfaces*).
 
 ![About Me Card](assets/about.svg)
 
@@ -32,32 +32,21 @@ Bespoke Vercel/Supabase-style dark glass tech stack matrix card.
 
 ---
 
-## 📊 5. GitHub Action Auto-Generated Real Cards Grid (`profile-summary-card-output/`)
-Auto-generated daily by `.github/workflows/profile-summary.yml` from real GitHub account data (`eshwar187`).
-
-| Profile Details | Language Breakdown |
-| :---: | :---: |
-| ![Profile Details](profile-summary-card-output/tokyonight/0-profile-details.svg) | ![Repos per Language](profile-summary-card-output/tokyonight/1-repos-per-language.svg) |
-| **Most Committed Languages** | **Commit Streaks & Velocity** |
-| ![Most Committed Languages](profile-summary-card-output/tokyonight/2-most-commit-language.svg) | ![Streaks & Velocity](profile-summary-card-output/tokyonight/3-stats.svg) |
-
----
-
-## 💭 6. Engineering Philosophy Card (`assets/philosophy.svg`)
+## 💭 5. Engineering Philosophy Card (`assets/philosophy.svg`)
 Custom quote and architecture pillar card.
 
 ![Philosophy Card](assets/philosophy.svg)
 
 ---
 
-## ⚡ 7. Section Divider (`assets/divider.svg`)
+## ⚡ 6. Section Divider (`assets/divider.svg`)
 Glowing neon accent line with center diamond node.
 
 ![Section Divider](assets/divider.svg)
 
 ---
 
-## 🛡️ 8. Glassmorphism Badges (`assets/badges/`)
+## 🛡️ 7. Glassmorphism Badges (`assets/badges/`)
 
 | Technology | Badge Asset |
 | :--- | :--- |
@@ -78,7 +67,7 @@ Glowing neon accent line with center diamond node.
 
 ---
 
-## ⚓ 9. Footer Banner (`assets/footer.svg`)
+## ⚓ 8. Footer Banner (`assets/footer.svg`)
 Animated footer asset with glowing sine waves and drift particles.
 
 ![Footer Banner](assets/footer.svg)
