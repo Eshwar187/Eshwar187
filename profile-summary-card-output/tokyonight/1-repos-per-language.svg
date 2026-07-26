@@ -1,60 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="200" viewBox="0 0 450 200">
   <defs>
     <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#020617"/>
-      <stop offset="50%" stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#090D16"/>
+      <stop offset="100%" stop-color="#0F172A"/>
     </linearGradient>
-
-    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.6"/>
     </linearGradient>
-
     <style>
-      .title {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-weight: 800;
-        font-size: 13px;
-        fill: #8B5CF6;
-        letter-spacing: 1px;
-      }
-      .lang-text {
-        font-family: monospace, 'Courier New', Courier;
-        font-size: 12px;
-        fill: #E2E8F0;
-      }
+      .hdr { font-family: -apple-system, sans-serif; font-weight: 800; font-size: 13px; fill: #8B5CF6; letter-spacing: 1px; }
+      .lbl { font-family: -apple-system, sans-serif; font-size: 11px; fill: #94A3B8; font-weight: 600; }
+      .cnt { font-family: -apple-system, sans-serif; font-size: 11px; fill: #F8FAFC; font-weight: 700; }
     </style>
   </defs>
 
-  <rect width="440" height="220" rx="12" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1.2"/>
+  <rect width="450" height="200" rx="12" fill="url(#card-bg)" stroke="url(#border-glow)" stroke-width="1.2"/>
 
-  <!-- Header (Absolute Coordinates) -->
-  <circle cx="26" cy="28" r="5" fill="#8B5CF6"/>
-  <text x="40" y="32" class="title">REPOSITORIES BY LANGUAGE</text>
+  <!-- Title -->
+  <circle cx="25" cy="25" r="4" fill="#8B5CF6"/>
+  <text x="36" y="29" class="hdr">REPOSITORIES BY LANGUAGE — @eshwar187</text>
 
-  <!-- Multi-bar (Absolute Coordinates) -->
-  <rect x="20" y="57" width="150" height="14" rx="7" fill="#3178C6"/>
-  <rect x="174" y="57" width="110" height="14" rx="7" fill="#3572A5"/>
-  <rect x="288" y="57" width="80" height="14" rx="7" fill="#00ADD8"/>
-  <rect x="372" y="57" width="48" height="14" rx="7" fill="#CEA475"/>
+  <!-- Progress Bar Breakdown -->
+  <g transform="translate(20, 50)">
+    <rect x="0" y="0" width="115" height="12" rx="4" fill="#3178C6"/> <!-- TypeScript -->
+    <rect x="118" y="0" width="115" height="12" rx="4" fill="#F7DF1E"/> <!-- JavaScript -->
+    <rect x="236" y="0" width="90" height="12" rx="4" fill="#E34F26"/> <!-- HTML -->
+    <rect x="329" y="0" width="45" height="12" rx="4" fill="#3776AB"/> <!-- Python -->
+    <rect x="377" y="0" width="33" height="12" rx="4" fill="#A8B9CC"/> <!-- C -->
+  </g>
 
-  <!-- Legend List (Explicit Absolute X and Y for every row) -->
-  <!-- Row 1 -->
-  <circle cx="28" cy="95" r="5" fill="#3178C6"/>
-  <text x="42" y="99" class="lang-text">TypeScript / JavaScript</text>
+  <!-- Legend Items (Real Data) -->
+  <g transform="translate(25, 80)">
+    <circle cx="6" cy="10" r="5" fill="#3178C6"/>
+    <text x="20" y="14" class="lbl">TypeScript</text>
+    <text x="140" y="14" class="cnt">23 Repos (28%)</text>
 
-  <!-- Row 2 -->
-  <circle cx="28" cy="121" r="5" fill="#3572A5"/>
-  <text x="42" y="125" class="lang-text">Python &amp; Machine Learning</text>
+    <circle cx="6" cy="32" r="5" fill="#F7DF1E"/>
+    <text x="20" y="36" class="lbl">JavaScript</text>
+    <text x="140" y="36" class="cnt">23 Repos (28%)</text>
 
-  <!-- Row 3 -->
-  <circle cx="28" cy="147" r="5" fill="#00ADD8"/>
-  <text x="42" y="151" class="lang-text">Go (Golang) Microservices</text>
+    <circle cx="6" cy="54" r="5" fill="#E34F26"/>
+    <text x="20" y="58" class="lbl">HTML / Web UI</text>
+    <text x="140" y="58" class="cnt">18 Repos (22%)</text>
 
-  <!-- Row 4 -->
-  <circle cx="28" cy="173" r="5" fill="#CEA475"/>
-  <text x="42" y="177" class="lang-text">Rust Systems &amp; WebAssembly</text>
+    <circle cx="6" cy="76" r="5" fill="#3776AB"/>
+    <text x="20" y="80" class="lbl">Python / AI</text>
+    <text x="140" y="80" class="cnt">7 Repos (9%)</text>
 
+    <circle cx="6" cy="98" r="5" fill="#A8B9CC"/>
+    <text x="20" y="102" class="lbl">C / Systems</text>
+    <text x="140" y="102" class="cnt">5 Repos (6%)</text>
+  </g>
 </svg>

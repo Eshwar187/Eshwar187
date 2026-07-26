@@ -33,9 +33,9 @@
     </linearGradient>
 
     <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.7"/>
-      <stop offset="50%" stop-color="#B026FF" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2"/>
+      <stop offset="0%" stop-color="#00F0FF" stroke-opacity="0.7"/>
+      <stop offset="50%" stop-color="#B026FF" stroke-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2563EB" stroke-opacity="0.2"/>
     </linearGradient>
 
     <!-- Cyberpunk Grid -->
@@ -168,7 +168,7 @@
   <text x="525" y="262" font-family="-apple-system, sans-serif" font-weight="800" font-size="11" fill="#FFFFFF">DEPLOY</text>
   <text x="525" y="276" font-family="-apple-system, sans-serif" font-size="9" fill="#94A3B8">Cloud Native Everywhere</text>
 
-  <!-- Right Column: Terminal Window (Absolute X: 660, NO CSS transform keyframe conflict!) -->
+  <!-- Right Column: Terminal Window (Absolute X: 660) -->
   <rect x="660" y="45" width="160" height="247" rx="10" fill="#090D16" fill-opacity="0.95" stroke="url(#border-glow)" stroke-width="1.2"/>
   <rect x="660" y="45" width="160" height="30" rx="10" fill="#0F172A"/>
   <circle cx="816" cy="60" r="4" fill="#10B981"/>
@@ -185,28 +185,28 @@
   <text x="675" y="180" class="term-text" fill="#34D399">&gt; Repeat.</text>
   <text x="675" y="205" class="term-text" fill="#94A3B8">&gt; <tspan class="cursor">_</tspan></text>
 
-  <!-- Bottom Glass Metrics Bar (Absolute X: 210, Y: 380, Width: 750, Height: 75) -->
+  <!-- Bottom Glass Metrics Bar (REAL DATA FOR ESHWAR187: X: 210, Y: 380, Width: 750, Height: 75) -->
   <rect x="210" y="380" width="750" height="75" rx="14" fill="url(#glass-card-bg)" stroke="url(#border-glow)" stroke-width="1.2"/>
 
-  <!-- Stat 1: Repositories (X: 250) -->
-  <text x="250" y="415" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" fill="#FFFFFF">150+</text>
-  <text x="250" y="433" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">Repositories</text>
+  <!-- Stat 1: Public Repositories (REAL 120 REPOS) -->
+  <text x="250" y="415" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" fill="#FFFFFF">120</text>
+  <text x="250" y="433" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">Public Repos</text>
 
-  <!-- Stat 2: GitHub Stars (X: 400) -->
-  <text x="400" y="415" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" fill="#00F0FF">600+</text>
-  <text x="400" y="433" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">GitHub Stars</text>
+  <!-- Stat 2: Primary Tech (TypeScript & JS) -->
+  <text x="400" y="415" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" fill="#00F0FF">TS &amp; JS</text>
+  <text x="400" y="433" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">Primary Stack</text>
 
-  <!-- Stat 3: Contributions (X: 550) -->
-  <text x="550" y="415" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" fill="#B026FF">250+</text>
-  <text x="550" y="433" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">Contributions</text>
+  <!-- Stat 3: Member Since -->
+  <text x="550" y="415" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" fill="#B026FF">May 2023</text>
+  <text x="550" y="433" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">GitHub Member</text>
 
-  <!-- Stat 4: Day Streak (X: 700) -->
-  <text x="700" y="415" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" fill="#34D399">70+</text>
-  <text x="700" y="433" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">Day Streak</text>
+  <!-- Stat 4: Bio Focus -->
+  <text x="700" y="415" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" fill="#34D399">SaaS &amp; AI</text>
+  <text x="700" y="433" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">Systems Builder</text>
 
-  <!-- Stat 5: Rank (X: 830) -->
-  <text x="830" y="415" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" fill="#60A5FA">Top 3%</text>
-  <text x="830" y="433" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">Developers</text>
+  <!-- Stat 5: Verified Account -->
+  <text x="830" y="415" font-family="-apple-system, sans-serif" font-weight="800" font-size="16" fill="#60A5FA">Verified</text>
+  <text x="830" y="433" font-family="-apple-system, sans-serif" font-size="10" fill="#94A3B8">@eshwar187</text>
 
   <!-- Outer Frame -->
   <rect width="1000" height="500" rx="16" fill="none" stroke="url(#border-glow)" stroke-width="1.5"/>
