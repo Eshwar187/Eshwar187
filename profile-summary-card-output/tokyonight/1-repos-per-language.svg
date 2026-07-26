@@ -30,39 +30,31 @@
 
   <rect width="440" height="220" rx="12" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1.2"/>
 
-  <g transform="translate(20, 22)">
-    <circle cx="6" cy="6" r="5" fill="#8B5CF6"/>
-    <text x="20" y="10" class="title">REPOSITORIES BY LANGUAGE</text>
+  <!-- Header (Absolute Coordinates) -->
+  <circle cx="26" cy="28" r="5" fill="#8B5CF6"/>
+  <text x="40" y="32" class="title">REPOSITORIES BY LANGUAGE</text>
 
-    <g transform="translate(0, 35)">
-      <!-- Multi-bar -->
-      <rect x="0" y="0" width="150" height="14" rx="7" fill="#3178C6"/>
-      <rect x="154" y="0" width="110" height="14" rx="7" fill="#3572A5"/>
-      <rect x="268" y="0" width="80" height="14" rx="7" fill="#00ADD8"/>
-      <rect x="352" y="0" width="48" height="14" rx="7" fill="#CEA475"/>
+  <!-- Multi-bar (Absolute Coordinates) -->
+  <rect x="20" y="57" width="150" height="14" rx="7" fill="#3178C6"/>
+  <rect x="174" y="57" width="110" height="14" rx="7" fill="#3572A5"/>
+  <rect x="288" y="57" width="80" height="14" rx="7" fill="#00ADD8"/>
+  <rect x="372" y="57" width="48" height="14" rx="7" fill="#CEA475"/>
 
-      <!-- Legend List with isolated y transforms -->
-      <g transform="translate(0, 30)">
-        <g transform="translate(0, 0)">
-          <circle cx="8" cy="8" r="5" fill="#3178C6"/>
-          <text x="22" y="12" class="lang-text">TypeScript / JavaScript</text>
-        </g>
+  <!-- Legend List (Explicit Absolute X and Y for every row) -->
+  <!-- Row 1 -->
+  <circle cx="28" cy="95" r="5" fill="#3178C6"/>
+  <text x="42" y="99" class="lang-text">TypeScript / JavaScript</text>
 
-        <g transform="translate(0, 26)">
-          <circle cx="8" cy="8" r="5" fill="#3572A5"/>
-          <text x="22" y="12" class="lang-text">Python &amp; Machine Learning</text>
-        </g>
+  <!-- Row 2 -->
+  <circle cx="28" cy="121" r="5" fill="#3572A5"/>
+  <text x="42" y="125" class="lang-text">Python &amp; Machine Learning</text>
 
-        <g transform="translate(0, 52)">
-          <circle cx="8" cy="8" r="5" fill="#00ADD8"/>
-          <text x="22" y="12" class="lang-text">Go (Golang) Microservices</text>
-        </g>
+  <!-- Row 3 -->
+  <circle cx="28" cy="147" r="5" fill="#00ADD8"/>
+  <text x="42" y="151" class="lang-text">Go (Golang) Microservices</text>
 
-        <g transform="translate(0, 78)">
-          <circle cx="8" cy="8" r="5" fill="#CEA475"/>
-          <text x="22" y="12" class="lang-text">Rust Systems &amp; WebAssembly</text>
-        </g>
-      </g>
-    </g>
-  </g>
+  <!-- Row 4 -->
+  <circle cx="28" cy="173" r="5" fill="#CEA475"/>
+  <text x="42" y="177" class="lang-text">Rust Systems &amp; WebAssembly</text>
+
 </svg>
