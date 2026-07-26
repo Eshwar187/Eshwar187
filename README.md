@@ -1,16 +1,16 @@
 <div align="center">
 
-  <!-- Hero Section (Matches Image 2 100% Perfectly) -->
+  <!-- Compact Low-Profile Hero Section (Sleek Ultra-Wide Header) -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero.svg">
-    <img src="assets/hero.png" alt="ESHWAR J — Full Stack Developer & AI Engineer" width="100%" />
+    <img src="assets/hero.svg" alt="ESHWAR J — Full Stack Developer & AI Engineer" width="100%" height="260" style="max-height: 280px; object-fit: contain;" />
   </picture>
 
   <br/><br/>
 
   <!-- Dynamic Typing Animation Banner -->
   <a href="https://github.com/eshwar187">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&repeat=true&width=750&height=45&lines=Architecting+Scalable+Cloud+Native+Systems;Building+Intelligent+AI-Powered+Applications;Full+Stack+Engineering+%E2%80%A2+Performance-Driven;Code.+Build.+Ship.+Scale." alt="Typing Banner" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&repeat=true&width=700&height=36&lines=Architecting+Scalable+Cloud+Native+Systems;Building+Intelligent+AI-Powered+Applications;Full+Stack+Engineering+%E2%80%A2+Performance-Driven;Code.+Build.+Ship.+Scale." alt="Typing Banner" />
   </a>
 
   <br/><br/>
@@ -100,7 +100,7 @@
 
 <br/>
 
-<!-- REAL REPOSITORY-BACKED GITHUB DASHBOARD & ANALYTICS (100% Reliable SVG Cards) -->
+<!-- REAL REPOSITORY-BACKED GITHUB DASHBOARD & ANALYTICS (100% Real Data for @eshwar187) -->
 <div align="center">
 
   <!-- Profile Details & Repos per Language -->
