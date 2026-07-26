@@ -1,13 +1,16 @@
 <div align="center">
 
-  <!-- Hero Section Animated SVG (Inspired by Image 3) -->
-  <img src="assets/hero.svg" alt="Eshwar J — Full Stack & AI Engineer" width="100%" />
+  <!-- Hero Section (Matches Image 2 100% Perfectly) -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero.svg">
+    <img src="assets/hero.svg" alt="ESHWAR J — Full Stack Developer & AI Engineer" width="100%" />
+  </picture>
 
   <br/><br/>
 
   <!-- Dynamic Typing Animation Banner -->
   <a href="https://github.com/eshwar187">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&repeat=true&width=750&height=45&lines=Architecting+Scalable+Cloud+Native+Systems;Building+Intelligent+AI-Powered+Applications;Full+Stack+Engineering+%E2%80%A2+Performance-Driven;Code.+Build.+Ship.+Scale." alt="Typing Banner" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&repeat=true&width=750&height=45&lines=Architecting+Scalable+Cloud+Native+Systems;Building+Intelligent+AI-Powered+Applications;Full+Stack+Engineering+%E2%80%A2+Performance-Driven;Code.+Build.+Ship.+Scale." alt="Typing Banner" />
   </a>
 
   <br/><br/>
@@ -22,7 +25,7 @@
   </a>
   &nbsp;
   <a href="https://eshwarj.me">
-    <img src="https://img.shields.io/badge/Portfolio-38BDF8?style=for-the-badge&logo=vercel&logoColor=black&color=0F172A" alt="Portfolio"/>
+    <img src="https://img.shields.io/badge/Portfolio-00F0FF?style=for-the-badge&logo=vercel&logoColor=black&color=0F172A" alt="Portfolio"/>
   </a>
   &nbsp;
   <a href="https://instagram.com/eshwar_official">
