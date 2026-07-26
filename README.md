@@ -3,7 +3,7 @@
   <!-- Hero Section (Matches Image 2 100% Perfectly) -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero.svg">
-    <img src="assets/hero.svg" alt="ESHWAR J — Full Stack Developer & AI Engineer" width="100%" />
+    <img src="assets/hero.png" alt="ESHWAR J — Full Stack Developer & AI Engineer" width="100%" />
   </picture>
 
   <br/><br/>
@@ -100,31 +100,20 @@
 
 <br/>
 
-<!-- REAL LIVE GITHUB DASHBOARD & ANALYTICS (Pulls 100% Real Live Data for user: eshwar187) -->
+<!-- REAL REPOSITORY-BACKED GITHUB DASHBOARD & ANALYTICS (100% Reliable SVG Cards) -->
 <div align="center">
 
-  <!-- Live GitHub Readme Stats & Top Languages -->
-  <a href="https://github.com/eshwar187">
-    <img src="https://github-readme-stats.vercel.app/api?username=eshwar187&show_icons=true&theme=synthwave&title_color=38BDF8&icon_color=38BDF8&text_color=94A3B8&bg_color=020617&border_color=1E293B&hide_border=false" width="49%" alt="GitHub Stats for eshwar187"/>
-  </a>
+  <!-- Profile Details & Repos per Language -->
+  <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" width="49%" alt="GitHub Profile Details"/>
   &nbsp;
-  <a href="https://github.com/eshwar187">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eshwar187&layout=compact&theme=synthwave&title_color=8B5CF6&text_color=94A3B8&bg_color=020617&border_color=1E293B&hide_border=false" width="47%" alt="Top Languages for eshwar187"/>
-  </a>
+  <img src="profile-summary-card-output/tokyonight/1-repos-per-language.svg" width="47%" alt="Language Breakdown"/>
 
   <br/><br/>
 
-  <!-- Live GitHub Streak Stats -->
-  <a href="https://github.com/eshwar187">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=eshwar187&theme=dark&background=020617&border=1E293B&stroke=2563EB&ring=38BDF8&fire=8B5CF6&currStreakNum=38BDF8&sidenums=94A3B8&sidelabels=64748B&dates=38BDF8" width="97%" alt="GitHub Streak Stats for eshwar187" />
-  </a>
-
-  <br/><br/>
-
-  <!-- Live GitHub Activity Graph -->
-  <a href="https://github.com/eshwar187">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=eshwar187&theme=react-dark&bg_color=020617&color=38BDF8&line=2563EB&point=8B5CF6&area=true&hide_border=true" width="97%" alt="Activity Graph for eshwar187" />
-  </a>
+  <!-- Most Commit Language & Activity Stats -->
+  <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" alt="Most Committed Languages"/>
+  &nbsp;
+  <img src="profile-summary-card-output/tokyonight/3-stats.svg" width="47%" alt="Commit Streaks & Metrics"/>
 
 </div>
 

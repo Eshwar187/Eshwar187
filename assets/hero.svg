@@ -44,11 +44,6 @@
       <circle cx="40" cy="40" r="1.2" fill="#00F0FF" fill-opacity="0.3"/>
     </pattern>
 
-    <filter id="subtle-glow">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-
     <style>
       .cyber-sub {
         font-family: monospace, 'Courier New', Courier;
@@ -173,7 +168,7 @@
   <text x="525" y="262" font-family="-apple-system, sans-serif" font-weight="800" font-size="11" fill="#FFFFFF">DEPLOY</text>
   <text x="525" y="276" font-family="-apple-system, sans-serif" font-size="9" fill="#94A3B8">Cloud Native Everywhere</text>
 
-  <!-- Right Column: Terminal Window (Absolute X: 660) -->
+  <!-- Right Column: Terminal Window (Absolute X: 660, NO CSS transform keyframe conflict!) -->
   <rect x="660" y="45" width="160" height="247" rx="10" fill="#090D16" fill-opacity="0.95" stroke="url(#border-glow)" stroke-width="1.2"/>
   <rect x="660" y="45" width="160" height="30" rx="10" fill="#0F172A"/>
   <circle cx="816" cy="60" r="4" fill="#10B981"/>
