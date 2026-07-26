@@ -40,25 +40,21 @@
     </filter>
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&amp;family=Inter:wght@400;600;700;800&amp;display=swap');
-
       .editor-title {
-        font-family: 'Fira Code', monospace;
+        font-family: monospace, 'Courier New', Courier;
         font-size: 12px;
         fill: #94A3B8;
       }
 
       .code-line {
-        font-family: 'Fira Code', monospace;
-        font-size: 13px;
-        line-height: 1.6;
+        font-family: monospace, 'Courier New', Courier;
+        font-size: 12px;
       }
 
       .kw { fill: #F472B6; font-weight: 600; }
       .cls { fill: #38BDF8; font-weight: 600; }
       .str { fill: #A3E635; }
       .prop { fill: #E2E8F0; }
-      .num { fill: #F59E0B; }
       .cmnt { fill: #64748B; font-style: italic; }
 
       @keyframes blinkCursor {
@@ -81,13 +77,11 @@
 
   <!-- Code Editor Window Container -->
   <g transform="translate(20, 20)">
-    <!-- Shadow & Glow backdrop -->
     <rect width="880" height="320" rx="12" fill="#000000" fill-opacity="0.5" y="4" filter="url(#subtle-shadow)"/>
     <rect width="880" height="320" rx="12" fill="url(#editor-glass)" stroke="url(#editor-border)" stroke-width="1.2"/>
 
     <!-- Window Title Bar -->
     <rect width="880" height="38" rx="12" fill="#0F172A" fill-opacity="0.9"/>
-    <!-- Controls -->
     <circle cx="24" cy="19" r="5.5" fill="#EF4444"/>
     <circle cx="40" cy="19" r="5.5" fill="#F59E0B"/>
     <circle cx="56" cy="19" r="5.5" fill="#10B981"/>
@@ -96,14 +90,14 @@
 
     <!-- Tab indicator -->
     <rect x="120" y="8" width="140" height="30" rx="6" fill="#1E293B" fill-opacity="0.7"/>
-    <text x="190" y="27" font-family="'Fira Code', monospace" font-size="11" fill="#38BDF8" text-anchor="middle">⚡ developer.ts</text>
+    <text x="190" y="27" font-family="monospace" font-size="11" fill="#38BDF8" text-anchor="middle">⚡ developer.ts</text>
 
     <line x1="0" y1="38" x2="880" y2="38" stroke="#1E293B" stroke-width="1"/>
 
-    <!-- Left Code Panel -->
+    <!-- Left Code Panel (Explicit Y offsets to prevent overlap) -->
     <g transform="translate(24, 60)" class="code-line">
       <!-- Line Numbers -->
-      <g fill="#475569" font-family="'Fira Code', monospace" font-size="12">
+      <g fill="#475569" font-family="monospace" font-size="12">
         <text x="0" y="16">01</text>
         <text x="0" y="38">02</text>
         <text x="0" y="60">03</text>
@@ -121,60 +115,41 @@
 
       <!-- Code Content -->
       <g transform="translate(42, 0)">
-        <text y="16" class="cmnt">// Senior Engineer &amp; Systems Architect</text>
-        
-        <text y="38"><tspan class="kw">class</tspan> <tspan class="cls">EshwarJ</tspan> <tspan class="kw">implements</tspan> <tspan class="cls">FullStackArchitect</tspan> {</text>
-        
-        <text y="60">  <tspan class="kw">readonly</tspan> <tspan class="prop">name</tspan> = <tspan class="str">"Eshwar J"</tspan>;</text>
-        <text y="82">  <tspan class="kw">readonly</tspan> <tspan class="prop">role</tspan> = <tspan class="str">"Full Stack &amp; AI Engineer"</tspan>;</text>
-        <text y="104">  <tspan class="kw">readonly</tspan> <tspan class="prop">mission</tspan> = <tspan class="str">"Building resilient global-scale software"</tspan>;</text>
-        
-        <text y="132">  <tspan class="kw">public readonly</tspan> <tspan class="prop">focusAreas</tspan> = [</text>
-        <text y="154">    <tspan class="str">"Distributed AI Systems &amp; LLM Orchestration"</tspan>,</text>
-        <text y="176">    <tspan class="str">"High-Throughput Microservices (Go / Python / Node)"</tspan>,</text>
-        <text y="198">    <tspan class="str">"Cloud-Native Kubernetes &amp; Event Infrastructure"</tspan></text>
-        <text y="220">  ];<tspan class="cursor">█</tspan></text>
-
-        <text y="242"><tspan class="kw">}</tspan></text>
+        <text x="0" y="16" class="cmnt">// Senior Engineer &amp; Systems Architect</text>
+        <text x="0" y="38"><tspan class="kw">class</tspan> <tspan class="cls">EshwarJ</tspan> <tspan class="kw">implements</tspan> <tspan class="cls">FullStackArchitect</tspan> {</text>
+        <text x="0" y="60">  <tspan class="kw">readonly</tspan> <tspan class="prop">name</tspan> = <tspan class="str">"Eshwar J"</tspan>;</text>
+        <text x="0" y="82">  <tspan class="kw">readonly</tspan> <tspan class="prop">role</tspan> = <tspan class="str">"Full Stack &amp; AI Engineer"</tspan>;</text>
+        <text x="0" y="104">  <tspan class="kw">readonly</tspan> <tspan class="prop">mission</tspan> = <tspan class="str">"Building resilient global-scale software"</tspan>;</text>
+        <text x="0" y="132">  <tspan class="kw">public readonly</tspan> <tspan class="prop">focusAreas</tspan> = [</text>
+        <text x="0" y="154">    <tspan class="str">"Distributed AI Systems &amp; LLM Orchestration"</tspan>,</text>
+        <text x="0" y="176">    <tspan class="str">"High-Throughput Microservices (Go / Python / Node)"</tspan>,</text>
+        <text x="0" y="198">    <tspan class="str">"Cloud-Native Kubernetes &amp; Event Infrastructure"</tspan></text>
+        <text x="0" y="220">  ];<tspan class="cursor">█</tspan></text>
+        <text x="0" y="242"><tspan class="kw">}</tspan></text>
       </g>
     </g>
 
-    <!-- Right Side Telemetry Card Overlay -->
+    <!-- Right Side Architecture Focus Panel -->
     <g transform="translate(560, 56)">
       <rect width="296" height="240" rx="10" fill="#090D16" fill-opacity="0.85" stroke="url(#editor-border)" stroke-width="1"/>
 
       <g transform="translate(18, 20)">
         <!-- Header -->
         <circle cx="6" cy="6" r="5" fill="#10B981"/>
-        <text x="20" y="10" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">SYSTEM TELEMETRY</text>
+        <text x="20" y="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="13" fill="#FFFFFF">ARCHITECTURAL FOCUS</text>
 
-        <!-- Metrics Cards -->
-        <g transform="translate(0, 26)">
-          <!-- Row 1 -->
-          <rect x="0" y="0" width="125" height="52" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#334155" stroke-width="1"/>
-          <text x="12" y="20" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#64748B">LATENCY TARGET</text>
-          <text x="12" y="40" font-family="'Fira Code', monospace" font-size="15" font-weight="700" fill="#38BDF8">&lt;45ms p99</text>
+        <g transform="translate(0, 30)">
+          <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#38BDF8">⚡ Distributed Systems</text>
+          <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94A3B8">High-throughput microservices in Go &amp; Node</text>
 
-          <rect x="135" y="0" width="125" height="52" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="#334155" stroke-width="1"/>
-          <text x="147" y="20" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#64748B">AVAILABILITY</text>
-          <text x="147" y="40" font-family="'Fira Code', monospace" font-size="15" font-weight="700" fill="#10B981">99.99%</text>
-        </g>
+          <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#8B5CF6">🧠 AI &amp; Agent Pipelines</text>
+          <text x="0" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94A3B8">LLM workflows, RAG, &amp; Python ML models</text>
 
-        <!-- Focus Tags -->
-        <g transform="translate(0, 95)">
-          <text x="0" y="10" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#94A3B8" letter-spacing="1">CORE ARCHITECTURE</text>
-          
-          <rect x="0" y="18" width="120" height="24" rx="6" fill="#0F172A" stroke="#2563EB" stroke-width="1"/>
-          <text x="10" y="34" font-family="'Fira Code', monospace" font-size="10" fill="#60A5FA">🧠 AI Orchestration</text>
+          <text x="0" y="116" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#10B981">☁️ Cloud Native Infrastructure</text>
+          <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94A3B8">Kubernetes, Docker, &amp; AWS automation</text>
 
-          <rect x="128" y="18" width="132" height="24" rx="6" fill="#0F172A" stroke="#8B5CF6" stroke-width="1"/>
-          <text x="138" y="34" font-family="'Fira Code', monospace" font-size="10" fill="#C084FC">⚡ Microservices</text>
-
-          <rect x="0" y="48" width="110" height="24" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1"/>
-          <text x="10" y="64" font-family="'Fira Code', monospace" font-size="10" fill="#38BDF8">☁️ Cloud Native</text>
-
-          <rect x="118" y="48" width="142" height="24" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="1"/>
-          <text x="128" y="64" font-family="'Fira Code', monospace" font-size="10" fill="#34D399">🛡️ Zero-Trust Infra</text>
+          <text x="0" y="166" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#60A5FA">🎨 Modern User Experience</text>
+          <text x="0" y="182" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94A3B8">Reactive Next.js, React 19, &amp; Tailwind CSS</text>
         </g>
       </g>
     </g>

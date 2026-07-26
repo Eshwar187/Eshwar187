@@ -32,35 +32,21 @@ Bespoke Vercel/Supabase-style dark glass tech stack matrix card.
 
 ---
 
-## 📊 5. Developer Dashboard Card (`assets/dashboard.svg`)
-Handcrafted developer statistics & language distribution matrix card.
-
-![Developer Dashboard](assets/dashboard.svg)
-
----
-
-## ⚡ 6. Activity Streaks Card (`assets/streak.svg`)
-Handcrafted activity streaks & contribution velocity card.
-
-![Activity Streaks](assets/streak.svg)
-
----
-
-## 💭 7. Engineering Philosophy Card (`assets/philosophy.svg`)
+## 💭 5. Engineering Philosophy Card (`assets/philosophy.svg`)
 Custom quote and architecture pillar card.
 
 ![Philosophy Card](assets/philosophy.svg)
 
 ---
 
-## ⚡ 8. Section Divider (`assets/divider.svg`)
+## ⚡ 6. Section Divider (`assets/divider.svg`)
 Glowing neon accent line with center diamond node.
 
 ![Section Divider](assets/divider.svg)
 
 ---
 
-## 🛡️ 9. Glassmorphism Badges (`assets/badges/`)
+## 🛡️ 7. Glassmorphism Badges (`assets/badges/`)
 
 | Technology | Badge Asset |
 | :--- | :--- |
@@ -81,7 +67,7 @@ Glowing neon accent line with center diamond node.
 
 ---
 
-## ⚓ 10. Footer Banner (`assets/footer.svg`)
+## ⚓ 8. Footer Banner (`assets/footer.svg`)
 Animated footer asset with glowing sine waves and drift particles.
 
 ![Footer Banner](assets/footer.svg)

@@ -25,27 +25,21 @@
 
     <!-- Card Glassmorphism Gradient -->
     <linearGradient id="glass-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.75"/>
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.85"/>
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
     </linearGradient>
 
     <!-- Border Linear Gradient -->
     <linearGradient id="border-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
       <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2"/>
     </linearGradient>
 
     <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="40%" stop-color="#E2E8F0"/>
-      <stop offset="70%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#8B5CF6"/>
-    </linearGradient>
-
-    <linearGradient id="accent-text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
     </linearGradient>
 
     <!-- Grid Pattern -->
@@ -54,7 +48,6 @@
       <circle cx="40" cy="40" r="1" fill="#38BDF8" fill-opacity="0.3"/>
     </pattern>
 
-    <!-- Glow Filter -->
     <filter id="blur-glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="12" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
@@ -66,52 +59,42 @@
     </filter>
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;family=Inter:wght@400;600;800;900&amp;display=swap');
-
       .title {
-        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         font-weight: 900;
         font-size: 46px;
         fill: url(#text-gradient);
-        letter-spacing: -1.2px;
+        letter-spacing: -1px;
       }
       
       .subtitle {
-        font-family: 'Inter', system-ui, -apple-system, sans-serif;
-        font-weight: 600;
-        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
         fill: #94A3B8;
         letter-spacing: 2px;
-        text-transform: uppercase;
       }
 
       .badge-text {
-        font-family: 'Fira Code', monospace;
-        font-weight: 600;
-        font-size: 12px;
+        font-family: monospace, 'Courier New', Courier;
+        font-weight: 700;
+        font-size: 11px;
         fill: #38BDF8;
       }
 
-      .code-text {
-        font-family: 'Fira Code', monospace;
-        font-size: 13px;
-        line-height: 1.6;
+      .code-font {
+        font-family: monospace, 'Courier New', Courier;
+        font-size: 12px;
       }
 
-      /* Keyframe Animations */
       @keyframes pulseGlow {
-        0%, 100% { opacity: 0.3; transform: scale(1); }
-        50% { opacity: 0.6; transform: scale(1.05); }
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.6; }
       }
 
       @keyframes floatCard1 {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-8px); }
-      }
-
-      @keyframes floatCard2 {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(10px); }
+        50% { transform: translateY(-6px); }
       }
 
       @keyframes cursorBlink {
@@ -119,36 +102,9 @@
         50% { opacity: 0; }
       }
 
-      @keyframes netLine {
-        0% { stroke-dashoffset: 200; }
-        100% { stroke-dashoffset: 0; }
-      }
-
-      @keyframes driftParticle {
-        0% { transform: translate(0, 0); opacity: 0.2; }
-        50% { opacity: 0.8; }
-        100% { transform: translate(30px, -40px); opacity: 0.2; }
-      }
-
-      @keyframes radarSweep {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-
-      .animated-glow-1 { animation: pulseGlow 8s ease-in-out infinite; transform-origin: 20% 30%; }
-      .animated-glow-2 { animation: pulseGlow 10s ease-in-out infinite 2s; transform-origin: 80% 70%; }
+      .animated-glow-1 { animation: pulseGlow 8s ease-in-out infinite; }
       .floating-1 { animation: floatCard1 6s ease-in-out infinite; }
-      .floating-2 { animation: floatCard2 7s ease-in-out infinite 1s; }
       .cursor { animation: cursorBlink 1s step-start infinite; fill: #38BDF8; }
-      
-      .net-line {
-        stroke-dasharray: 8 6;
-        animation: netLine 12s linear infinite;
-      }
-
-      .p1 { animation: driftParticle 7s ease-in-out infinite; }
-      .p2 { animation: driftParticle 9s ease-in-out infinite 1.5s; }
-      .p3 { animation: driftParticle 11s ease-in-out infinite 3s; }
     </style>
   </defs>
 
@@ -157,46 +113,18 @@
   
   <!-- Glowing Background Orbs -->
   <rect width="920" height="460" rx="16" fill="url(#glow-primary)" class="animated-glow-1"/>
-  <rect width="920" height="460" rx="16" fill="url(#glow-secondary)" class="animated-glow-2"/>
+  <rect width="920" height="460" rx="16" fill="url(#glow-secondary)"/>
   <rect width="920" height="460" rx="16" fill="url(#glow-cyan)"/>
 
   <!-- Grid Overlay -->
   <rect width="920" height="460" rx="16" fill="url(#grid-pattern)"/>
-
-  <!-- Neural Network Mesh Lines -->
-  <g opacity="0.35">
-    <path d="M 120 80 L 280 180 L 450 110 L 650 220 L 820 140" fill="none" stroke="#2563EB" stroke-width="1.5" class="net-line"/>
-    <path d="M 80 320 L 250 240 L 500 360 L 720 280 L 860 380" fill="none" stroke="#8B5CF6" stroke-width="1.5" class="net-line"/>
-    <path d="M 280 180 L 250 240" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4"/>
-    <path d="M 450 110 L 500 360" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4"/>
-    <path d="M 650 220 L 720 280" fill="none" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4 4"/>
-
-    <!-- Nodes -->
-    <circle cx="120" cy="80" r="4" fill="#38BDF8" filter="url(#subtle-glow)"/>
-    <circle cx="280" cy="180" r="5" fill="#2563EB" filter="url(#subtle-glow)"/>
-    <circle cx="450" cy="110" r="4" fill="#8B5CF6" filter="url(#subtle-glow)"/>
-    <circle cx="650" cy="220" r="6" fill="#38BDF8" filter="url(#subtle-glow)"/>
-    <circle cx="820" cy="140" r="4" fill="#60A5FA" filter="url(#subtle-glow)"/>
-    <circle cx="250" cy="240" r="5" fill="#8B5CF6" filter="url(#subtle-glow)"/>
-    <circle cx="500" cy="360" r="5" fill="#2563EB" filter="url(#subtle-glow)"/>
-    <circle cx="720" cy="280" r="4" fill="#38BDF8" filter="url(#subtle-glow)"/>
-  </g>
-
-  <!-- Drifting Ambient Particles -->
-  <g fill="#38BDF8">
-    <circle cx="150" cy="380" r="2" class="p1"/>
-    <circle cx="320" cy="120" r="1.5" class="p2"/>
-    <circle cx="580" cy="400" r="2.5" class="p3"/>
-    <circle cx="780" cy="90" r="2" class="p1"/>
-    <circle cx="880" cy="310" r="1.5" class="p2"/>
-  </g>
 
   <!-- Left Hero Panel: Identity & Typography -->
   <g transform="translate(48, 55)">
 
     <!-- Status Badge -->
     <g transform="translate(0, 0)">
-      <rect width="210" height="30" rx="15" fill="#0F172A" fill-opacity="0.8" stroke="url(#border-gradient)" stroke-width="1"/>
+      <rect width="210" height="30" rx="15" fill="#0F172A" fill-opacity="0.9" stroke="url(#border-gradient)" stroke-width="1"/>
       <circle cx="16" cy="15" r="4" fill="#10B981" filter="url(#subtle-glow)"/>
       <text x="28" y="19" class="badge-text">AVAILABLE FOR OPPORTUNITIES</text>
     </g>
@@ -207,115 +135,78 @@
     <!-- Subtitle / Roles -->
     <text x="0" y="118" class="subtitle">FULL STACK • AI ENGINEER • CLOUD</text>
 
-    <!-- Mission Statement / Tagline -->
-    <text x="0" y="152" font-family="'Inter', sans-serif" font-size="15" fill="#94A3B8" font-weight="400">
-      Building high-performance distributed systems &amp; intelligent web applications.
-    </text>
-    <text x="0" y="174" font-family="'Inter', sans-serif" font-size="15" fill="#64748B" font-weight="400">
-      Architecting scalable cloud infra with modern TypeScript, Go, &amp; Python.
-    </text>
+    <!-- Mission Statement / Tagline (Explicit line positioning to prevent overlap) -->
+    <text x="0" y="152" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" fill="#94A3B8" font-weight="400">Building high-performance distributed systems &amp; intelligent applications.</text>
+    <text x="0" y="176" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" fill="#64748B" font-weight="400">Architecting cloud infrastructure with modern TypeScript, Go, &amp; Python.</text>
 
     <!-- Action Tags / Tech Badges (Minimal Chips) -->
-    <g transform="translate(0, 205)">
-      <!-- Chip 1 -->
+    <g transform="translate(0, 210)">
       <rect x="0" y="0" width="115" height="28" rx="6" fill="#1E293B" fill-opacity="0.9" stroke="#334155" stroke-width="1"/>
-      <text x="12" y="18" font-family="'Fira Code', monospace" font-size="11" fill="#38BDF8">⚡ Distributed</text>
+      <text x="12" y="18" font-family="monospace" font-size="11" fill="#38BDF8">⚡ Distributed</text>
 
-      <!-- Chip 2 -->
       <rect x="125" y="0" width="100" height="28" rx="6" fill="#1E293B" fill-opacity="0.9" stroke="#334155" stroke-width="1"/>
-      <text x="137" y="18" font-family="'Fira Code', monospace" font-size="11" fill="#8B5CF6">🧠 AI/LLMs</text>
+      <text x="137" y="18" font-family="monospace" font-size="11" fill="#8B5CF6">🧠 AI/LLMs</text>
 
-      <!-- Chip 3 -->
       <rect x="235" y="0" width="110" height="28" rx="6" fill="#1E293B" fill-opacity="0.9" stroke="#334155" stroke-width="1"/>
-      <text x="247" y="18" font-family="'Fira Code', monospace" font-size="11" fill="#60A5FA">☁️ Cloud Native</text>
+      <text x="247" y="18" font-family="monospace" font-size="11" fill="#60A5FA">☁️ Cloud Native</text>
     </g>
 
-    <!-- Key Metrics Strip -->
-    <g transform="translate(0, 260)">
+    <!-- Key Focus Pillars Strip -->
+    <g transform="translate(0, 265)">
       <rect width="360" height="60" rx="10" fill="url(#glass-card-bg)" stroke="url(#border-gradient)" stroke-width="1"/>
       
-      <g transform="translate(20, 16)">
-        <text x="0" y="16" font-family="'Inter', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">99.9%</text>
-        <text x="0" y="32" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#64748B" letter-spacing="0.5">UPTIME TARGET</text>
+      <g transform="translate(16, 16)">
+        <text x="0" y="16" font-family="-apple-system, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">High Scale</text>
+        <text x="0" y="32" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B" letter-spacing="0.5">ARCHITECTURE</text>
       </g>
 
       <line x1="120" y1="12" x2="120" y2="48" stroke="#334155" stroke-width="1"/>
 
-      <g transform="translate(140, 16)">
-        <text x="0" y="16" font-family="'Inter', sans-serif" font-size="18" font-weight="800" fill="#38BDF8">&lt;50ms</text>
-        <text x="0" y="32" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#64748B" letter-spacing="0.5">LATENCY EDGE</text>
+      <g transform="translate(136, 16)">
+        <text x="0" y="16" font-family="-apple-system, sans-serif" font-size="15" font-weight="800" fill="#38BDF8">Fast Edge</text>
+        <text x="0" y="32" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B" letter-spacing="0.5">PERFORMANCE</text>
       </g>
 
       <line x1="240" y1="12" x2="240" y2="48" stroke="#334155" stroke-width="1"/>
 
-      <g transform="translate(260, 16)">
-        <text x="0" y="16" font-family="'Inter', sans-serif" font-size="18" font-weight="800" fill="#8B5CF6">Production</text>
-        <text x="0" y="32" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#64748B" letter-spacing="0.5">READY CODE</text>
+      <g transform="translate(256, 16)">
+        <text x="0" y="16" font-family="-apple-system, sans-serif" font-size="15" font-weight="800" fill="#8B5CF6">Production</text>
+        <text x="0" y="32" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B" letter-spacing="0.5">READY CODE</text>
       </g>
     </g>
   </g>
 
-  <!-- Right Hero Panel: Interactive Glass Terminal & Floating Cards -->
+  <!-- Right Hero Panel: Interactive Glass Terminal (Explicit positions for code text) -->
   <g transform="translate(460, 50)">
 
     <!-- Main Glass Terminal Window -->
     <g class="floating-1">
-      <!-- Window Shadow / Glow Base -->
       <rect width="410" height="270" rx="12" fill="#000000" fill-opacity="0.4" y="8" filter="url(#blur-glow)"/>
-
-      <!-- Window Frame -->
       <rect width="410" height="270" rx="12" fill="url(#glass-card-bg)" stroke="url(#border-gradient)" stroke-width="1.2"/>
 
       <!-- Terminal Title Bar -->
       <rect width="410" height="36" rx="12" fill="#0F172A" fill-opacity="0.9"/>
-      <!-- Window Controls -->
       <circle cx="20" cy="18" r="5.5" fill="#EF4444"/>
       <circle cx="36" cy="18" r="5.5" fill="#F59E0B"/>
       <circle cx="52" cy="18" r="5.5" fill="#10B981"/>
 
-      <text x="205" y="22" font-family="'Fira Code', monospace" font-size="11" fill="#64748B" text-anchor="middle">developer.ts — eshwar187</text>
-      
+      <text x="205" y="22" font-family="monospace" font-size="11" fill="#64748B" text-anchor="middle">developer.ts — eshwar187</text>
       <line x1="0" y1="36" x2="410" y2="36" stroke="#1E293B" stroke-width="1"/>
 
-      <!-- Code Snippet inside Terminal -->
-      <g transform="translate(20, 55)" class="code-text">
-        <text y="0" fill="#64748B">// Senior Full Stack &amp; AI Engineer</text>
-
-        <text y="24" fill="#F472B6">class <tspan fill="#38BDF8">Engineer</tspan> <tspan fill="#F472B6">implements</tspan> <tspan fill="#FBBF24">Architect</tspan> {</text>
-
-        <text y="48" fill="#94A3B8">  <tspan fill="#F472B6">readonly</tspan> name = <tspan fill="#A3E635">'Eshwar J'</tspan>;</text>
-        <text y="70" fill="#94A3B8">  <tspan fill="#F472B6">readonly</tspan> stack = [<tspan fill="#A3E635">'TypeScript'</tspan>, <tspan fill="#A3E635">'Go'</tspan>, <tspan fill="#A3E635">'Python'</tspan>];</text>
-        
-        <text y="92" fill="#94A3B8">  <tspan fill="#F472B6">public async</tspan> <tspan fill="#60A5FA">shipNextGenApp</tspan>() {</text>
-        <text y="114" fill="#94A3B8">    <tspan fill="#F472B6">const</tspan> sys = <tspan fill="#F472B6">new</tspan> <tspan fill="#38BDF8">AICloudSystem</tspan>({</text>
-        <text y="134" fill="#94A3B8">      reliability: <tspan fill="#F59E0B">0.9999</tspan>,</text>
-        <text y="154" fill="#94A3B8">      scale: <tspan fill="#A3E635">'global'</tspan></text>
-        <text y="174" fill="#94A3B8">    });</text>
-
-        <text y="196" fill="#94A3B8">    <tspan fill="#F472B6">return await</tspan> sys.<tspan fill="#60A5FA">deploy</tspan>();<tspan class="cursor">█</tspan></text>
-        <text y="214" fill="#F472B6">  }</text>
-        <text y="232" fill="#F472B6">}</text>
-      </g>
-    </g>
-
-    <!-- Floating Overlay Card: System Operational Status -->
-    <g transform="translate(180, 240)" class="floating-2">
-      <rect width="210" height="75" rx="10" fill="#090D16" fill-opacity="0.9" stroke="url(#border-gradient)" stroke-width="1" filter="url(#subtle-glow)"/>
-      
-      <g transform="translate(16, 16)">
-        <circle cx="10" cy="10" r="6" fill="#10B981" filter="url(#subtle-glow)"/>
-        <text x="24" y="14" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">System Status</text>
-        <text x="24" y="32" font-family="'Fira Code', monospace" font-size="10" fill="#38BDF8">All Nodes Operational</text>
-        
-        <!-- Activity Mini Bar Graph -->
-        <g transform="translate(0, 38)">
-          <rect x="0" y="0" width="8" height="10" rx="1" fill="#2563EB"/>
-          <rect x="11" y="-4" width="8" height="14" rx="1" fill="#38BDF8"/>
-          <rect x="22" y="-8" width="8" height="18" rx="1" fill="#8B5CF6"/>
-          <rect x="33" y="-2" width="8" height="12" rx="1" fill="#38BDF8"/>
-          <rect x="44" y="-12" width="8" height="22" rx="1" fill="#10B981"/>
-          <rect x="55" y="-6" width="8" height="16" rx="1" fill="#60A5FA"/>
-        </g>
+      <!-- Code Lines with EXPLICIT Y COORDINATES (Prevents text overlap!) -->
+      <g transform="translate(20, 55)" class="code-font">
+        <text x="0" y="16" fill="#64748B">// Senior Full Stack &amp; AI Engineer</text>
+        <text x="0" y="38" fill="#F472B6">class <tspan fill="#38BDF8">Engineer</tspan> <tspan fill="#F472B6">implements</tspan> <tspan fill="#FBBF24">Architect</tspan> {</text>
+        <text x="0" y="60" fill="#94A3B8">  readonly name = <tspan fill="#A3E635">'Eshwar J'</tspan>;</text>
+        <text x="0" y="82" fill="#94A3B8">  readonly stack = [<tspan fill="#A3E635">'TypeScript'</tspan>, <tspan fill="#A3E635">'Go'</tspan>, <tspan fill="#A3E635">'Python'</tspan>];</text>
+        <text x="0" y="104" fill="#94A3B8">  public async <tspan fill="#60A5FA">shipNextGenApp</tspan>() {</text>
+        <text x="0" y="126" fill="#94A3B8">    const sys = new <tspan fill="#38BDF8">AICloudSystem</tspan>({</text>
+        <text x="0" y="146" fill="#94A3B8">      reliability: <tspan fill="#F59E0B">0.9999</tspan>,</text>
+        <text x="0" y="166" fill="#94A3B8">      scale: <tspan fill="#A3E635">'global'</tspan></text>
+        <text x="0" y="186" fill="#94A3B8">    });</text>
+        <text x="0" y="208" fill="#94A3B8">    return await sys.<tspan fill="#60A5FA">deploy</tspan>();<tspan class="cursor">█</tspan></text>
+        <text x="0" y="226" fill="#F472B6">  }</text>
+        <text x="0" y="244" fill="#F472B6">}</text>
       </g>
     </g>
 
