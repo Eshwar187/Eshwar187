@@ -12,21 +12,21 @@
 
   <br/><br/>
 
-  <!-- Social & Action Badges -->
-  <a href="https://linkedin.com">
+  <!-- Verified Social & Action Badges (Twitter Removed, Instagram & Real Links Added) -->
+  <a href="https://www.linkedin.com/in/eshwar-j-7b8854289/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=0F172A" alt="LinkedIn"/>
   </a>
   &nbsp;
-  <a href="https://x.com">
-    <img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white&color=0F172A" alt="Twitter"/>
-  </a>
-  &nbsp;
-  <a href="mailto:contact@eshwar.dev">
+  <a href="mailto:jeshwar.work@gmail.com">
     <img src="https://img.shields.io/badge/Email-2563EB?style=for-the-badge&logo=gmail&logoColor=white&color=0F172A" alt="Email"/>
   </a>
   &nbsp;
-  <a href="https://eshwar.dev">
+  <a href="https://eshwarj.me">
     <img src="https://img.shields.io/badge/Portfolio-38BDF8?style=for-the-badge&logo=vercel&logoColor=black&color=0F172A" alt="Portfolio"/>
+  </a>
+  &nbsp;
+  <a href="https://instagram.com/eshwar_official">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&color=0F172A" alt="Instagram"/>
   </a>
 
   <br/><br/>
@@ -97,12 +97,18 @@
 
 <br/>
 
-<!-- GITHUB ACTIONS AUTO-UPDATED REAL PROFILE CARDS (100% Guaranteed Zero Broken Images) -->
+<!-- GITHUB ACTIONS REAL DATA 2x2 ANALYTICS GRID (100% Guaranteed Zero Broken Images) -->
 <div align="center">
 
   <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" width="49%" alt="GitHub Profile Details for eshwar187"/>
   &nbsp;
   <img src="profile-summary-card-output/tokyonight/1-repos-per-language.svg" width="47%" alt="Language Distribution for eshwar187"/>
+
+  <br/><br/>
+
+  <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" alt="Most Committed Language for eshwar187"/>
+  &nbsp;
+  <img src="profile-summary-card-output/tokyonight/3-stats.svg" width="47%" alt="Commit Streaks and Velocity for eshwar187"/>
 
 </div>
 

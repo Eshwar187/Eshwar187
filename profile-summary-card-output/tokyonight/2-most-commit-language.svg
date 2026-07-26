@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <style>
+      .title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        fill: #38BDF8;
+        letter-spacing: 1px;
+      }
+      .lang-text {
+        font-family: monospace, 'Courier New', Courier;
+        font-size: 12px;
+        fill: #E2E8F0;
+      }
+      .pct-text {
+        font-family: monospace, 'Courier New', Courier;
+        font-size: 12px;
+        fill: #94A3B8;
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Card Frame -->
+  <rect width="440" height="220" rx="12" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1.2"/>
+
+  <!-- Header (Absolute Coordinates) -->
+  <circle cx="26" cy="28" r="5" fill="#38BDF8"/>
+  <text x="40" y="32" class="title">MOST COMMITTED LANGUAGES</text>
+
+  <!-- Multi-bar (Absolute Coordinates) -->
+  <rect x="20" y="57" width="170" height="14" rx="7" fill="#3178C6"/>
+  <rect x="194" y="57" width="110" height="14" rx="7" fill="#00ADD8"/>
+  <rect x="308" y="57" width="70" height="14" rx="7" fill="#3572A5"/>
+  <rect x="382" y="57" width="38" height="14" rx="7" fill="#CEA475"/>
+
+  <!-- Legend List (Explicit Absolute X and Y for every row) -->
+  <!-- Row 1: TypeScript -->
+  <circle cx="28" cy="95" r="5" fill="#3178C6"/>
+  <text x="42" y="99" class="lang-text">TypeScript / JavaScript</text>
+  <text x="410" y="99" class="pct-text" text-anchor="end">42%</text>
+
+  <!-- Row 2: Go -->
+  <circle cx="28" cy="121" r="5" fill="#00ADD8"/>
+  <text x="42" y="125" class="lang-text">Go (Golang)</text>
+  <text x="410" y="125" class="pct-text" text-anchor="end">28%</text>
+
+  <!-- Row 3: Python -->
+  <circle cx="28" cy="147" r="5" fill="#3572A5"/>
+  <text x="42" y="151" class="lang-text">Python &amp; AI Systems</text>
+  <text x="410" y="151" class="pct-text" text-anchor="end">20%</text>
+
+  <!-- Row 4: Rust -->
+  <circle cx="28" cy="173" r="5" fill="#CEA475"/>
+  <text x="42" y="177" class="lang-text">Rust Systems</text>
+  <text x="410" y="177" class="pct-text" text-anchor="end">10%</text>
+
+</svg>

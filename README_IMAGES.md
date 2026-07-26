@@ -32,12 +32,14 @@ Bespoke Vercel/Supabase-style dark glass tech stack matrix card.
 
 ---
 
-## 📊 5. GitHub Action Auto-Generated Cards (`profile-summary-card-output/`)
+## 📊 5. GitHub Action Auto-Generated Real Cards Grid (`profile-summary-card-output/`)
 Auto-generated daily by `.github/workflows/profile-summary.yml` from real GitHub account data (`eshwar187`).
 
 | Profile Details | Language Breakdown |
 | :---: | :---: |
 | ![Profile Details](profile-summary-card-output/tokyonight/0-profile-details.svg) | ![Repos per Language](profile-summary-card-output/tokyonight/1-repos-per-language.svg) |
+| **Most Committed Languages** | **Commit Streaks & Velocity** |
+| ![Most Committed Languages](profile-summary-card-output/tokyonight/2-most-commit-language.svg) | ![Streaks & Velocity](profile-summary-card-output/tokyonight/3-stats.svg) |
 
 ---
 
