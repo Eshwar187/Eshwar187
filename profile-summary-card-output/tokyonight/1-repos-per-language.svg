@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <style>
+      .title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        fill: #8B5CF6;
+        letter-spacing: 1px;
+      }
+      .lang-text {
+        font-family: monospace, 'Courier New', Courier;
+        font-size: 12px;
+        fill: #E2E8F0;
+      }
+    </style>
+  </defs>
+
+  <rect width="440" height="220" rx="12" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1.2"/>
+
+  <g transform="translate(20, 22)">
+    <circle cx="6" cy="6" r="5" fill="#8B5CF6"/>
+    <text x="20" y="10" class="title">REPOSITORIES BY LANGUAGE</text>
+
+    <g transform="translate(0, 35)">
+      <!-- Multi-bar -->
+      <rect x="0" y="0" width="150" height="14" rx="7" fill="#3178C6"/>
+      <rect x="154" y="0" width="110" height="14" rx="7" fill="#3572A5"/>
+      <rect x="268" y="0" width="80" height="14" rx="7" fill="#00ADD8"/>
+      <rect x="352" y="0" width="48" height="14" rx="7" fill="#CEA475"/>
+
+      <!-- Legend -->
+      <g transform="translate(0, 30)">
+        <circle cx="8" cy="10" r="5" fill="#3178C6"/>
+        <text x="22" y="14" class="lang-text">TypeScript / JavaScript</text>
+
+        <circle cx="8" cy="36" r="5" fill="#3572A5"/>
+        <text x="22" y="40" class="lang-text">Python &amp; Machine Learning</text>
+
+        <circle cx="8" cy="62" r="5" fill="#00ADD8"/>
+        <text x="22" y="66" class="lang-text">Go (Golang) Microservices</text>
+
+        <circle cx="8" cy="88" r="5" fill="#CEA475"/>
+        <text x="22" y="92" class="lang-text">Rust Systems &amp; WebAssembly</text>
+      </g>
+    </g>
+  </g>
+</svg>

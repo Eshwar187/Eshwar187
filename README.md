@@ -97,23 +97,12 @@
 
 <br/>
 
-<!-- REAL LIVE GITHUB DASHBOARD & ANALYTICS (Pulls Live Data for user: eshwar187) -->
+<!-- GITHUB ACTIONS AUTO-UPDATED REAL PROFILE CARDS (100% Guaranteed Zero Broken Images) -->
 <div align="center">
 
-  <a href="https://github.com/eshwar187">
-    <img src="https://github-readme-stats.vercel.app/api?username=eshwar187&show_icons=true&theme=tokyonight&title_color=38BDF8&icon_color=38BDF8&text_color=94A3B8&bg_color=020617&border_color=1E293B&hide_border=false" width="49%" alt="GitHub Stats for eshwar187"/>
-  </a>
+  <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" width="49%" alt="GitHub Profile Details for eshwar187"/>
   &nbsp;
-  <a href="https://github.com/eshwar187">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eshwar187&layout=compact&theme=tokyonight&title_color=8B5CF6&text_color=94A3B8&bg_color=020617&border_color=1E293B&hide_border=false" width="47%" alt="Top Languages for eshwar187"/>
-  </a>
-
-  <br/><br/>
-
-  <!-- Real Dynamic GitHub Commit Streak Stats -->
-  <a href="https://github.com/eshwar187">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=eshwar187&theme=dark&background=020617&border=1E293B&stroke=2563EB&ring=38BDF8&fire=8B5CF6&currStreakNum=38BDF8&sidenums=94A3B8&sidelabels=64748B&dates=38BDF8" width="97%" alt="GitHub Streak Stats for eshwar187" />
-  </a>
+  <img src="profile-summary-card-output/tokyonight/1-repos-per-language.svg" width="47%" alt="Language Distribution for eshwar187"/>
 
 </div>
 

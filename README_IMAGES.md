@@ -32,21 +32,30 @@ Bespoke Vercel/Supabase-style dark glass tech stack matrix card.
 
 ---
 
-## 💭 5. Engineering Philosophy Card (`assets/philosophy.svg`)
+## 📊 5. GitHub Action Auto-Generated Cards (`profile-summary-card-output/`)
+Auto-generated daily by `.github/workflows/profile-summary.yml` from real GitHub account data (`eshwar187`).
+
+| Profile Details | Language Breakdown |
+| :---: | :---: |
+| ![Profile Details](profile-summary-card-output/tokyonight/0-profile-details.svg) | ![Repos per Language](profile-summary-card-output/tokyonight/1-repos-per-language.svg) |
+
+---
+
+## 💭 6. Engineering Philosophy Card (`assets/philosophy.svg`)
 Custom quote and architecture pillar card.
 
 ![Philosophy Card](assets/philosophy.svg)
 
 ---
 
-## ⚡ 6. Section Divider (`assets/divider.svg`)
+## ⚡ 7. Section Divider (`assets/divider.svg`)
 Glowing neon accent line with center diamond node.
 
 ![Section Divider](assets/divider.svg)
 
 ---
 
-## 🛡️ 7. Glassmorphism Badges (`assets/badges/`)
+## 🛡️ 8. Glassmorphism Badges (`assets/badges/`)
 
 | Technology | Badge Asset |
 | :--- | :--- |
@@ -67,7 +76,7 @@ Glowing neon accent line with center diamond node.
 
 ---
 
-## ⚓ 8. Footer Banner (`assets/footer.svg`)
+## ⚓ 9. Footer Banner (`assets/footer.svg`)
 Animated footer asset with glowing sine waves and drift particles.
 
 ![Footer Banner](assets/footer.svg)
