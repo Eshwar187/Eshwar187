@@ -21,7 +21,7 @@
       .title {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         font-weight: 800;
-        font-size: 14px;
+        font-size: 13px;
         fill: #38BDF8;
         letter-spacing: 1px;
       }
@@ -33,9 +33,8 @@
       }
       .val {
         font-family: monospace, 'Courier New', Courier;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 700;
-        fill: #E2E8F0;
       }
     </style>
   </defs>
@@ -47,25 +46,37 @@
     <circle cx="6" cy="6" r="5" fill="#38BDF8" filter="url(#subtle-glow)"/>
     <text x="20" y="10" class="title">GITHUB PROFILE DETAILS — @eshwar187</text>
 
-    <!-- Grid Stats -->
+    <!-- Grid Stats with isolated g transform groups -->
     <g transform="translate(0, 30)">
-      <!-- Row 1 -->
-      <rect x="0" y="0" width="190" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-      <text x="14" y="22" class="label">REPOSITORIES</text>
-      <text x="14" y="44" class="val" fill="#38BDF8">Public Profile</text>
+      
+      <!-- Box 1: Top Left -->
+      <g transform="translate(0, 0)">
+        <rect width="190" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="22" class="label">REPOSITORIES</text>
+        <text x="14" y="44" class="val" fill="#38BDF8">Public Profile</text>
+      </g>
 
-      <rect x="205" y="0" width="195" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-      <text x="14" y="22" class="label">CONTRIBUTIONS</text>
-      <text x="14" y="44" class="val" fill="#8B5CF6">Active Developer</text>
+      <!-- Box 2: Top Right -->
+      <g transform="translate(205, 0)">
+        <rect width="195" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="22" class="label">CONTRIBUTIONS</text>
+        <text x="14" y="44" class="val" fill="#8B5CF6">Active Developer</text>
+      </g>
 
-      <!-- Row 2 -->
-      <rect x="0" y="75" width="190" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-      <text x="14" y="22" class="label">ACCOUNT STATUS</text>
-      <text x="14" y="44" class="val" fill="#10B981">Verified GitHub</text>
+      <!-- Box 3: Bottom Left -->
+      <g transform="translate(0, 75)">
+        <rect width="190" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="22" class="label">ACCOUNT STATUS</text>
+        <text x="14" y="44" class="val" fill="#10B981">Verified GitHub</text>
+      </g>
 
-      <rect x="205" y="75" width="195" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-      <text x="14" y="22" class="label">AUTOMATED SYNC</text>
-      <text x="14" y="44" class="val" fill="#60A5FA">GitHub Actions</text>
+      <!-- Box 4: Bottom Right -->
+      <g transform="translate(205, 75)">
+        <rect width="195" height="60" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="22" class="label">AUTOMATED SYNC</text>
+        <text x="14" y="44" class="val" fill="#60A5FA">GitHub Actions</text>
+      </g>
+
     </g>
   </g>
 </svg>
