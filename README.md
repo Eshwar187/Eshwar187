@@ -1,16 +1,15 @@
 <div align="center">
 
-  <!-- Compact Low-Profile Hero Section (Sleek Ultra-Wide Header) -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero.svg">
-    <img src="assets/hero.svg" alt="ESHWAR J — Full Stack Developer & AI Engineer" width="100%" height="260" style="max-height: 280px; object-fit: contain;" />
-  </picture>
+  <!-- TOP 1% CINEMATIC HERO BANNER (Image 2 Artwork with Real Stats) -->
+  <a href="https://github.com/eshwar187">
+    <img src="assets/hero.png" alt="ESHWAR J — Full Stack Developer & AI Engineer" width="100%" />
+  </a>
 
   <br/><br/>
 
   <!-- Dynamic Typing Animation Banner -->
   <a href="https://github.com/eshwar187">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&repeat=true&width=700&height=36&lines=Architecting+Scalable+Cloud+Native+Systems;Building+Intelligent+AI-Powered+Applications;Full+Stack+Engineering+%E2%80%A2+Performance-Driven;Code.+Build.+Ship.+Scale." alt="Typing Banner" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2500&pause=800&color=00F0FF&center=true&vCenter=true&repeat=true&width=800&height=50&lines=Architecting+Scalable+Cloud+Native+Systems;Building+Intelligent+AI-Powered+Applications;Full+Stack+Engineering+%E2%80%A2+Performance-Driven;Code.+Build.+Ship.+Scale." alt="Typing Banner" />
   </a>
 
   <br/><br/>
@@ -19,15 +18,15 @@
   <a href="https://www.linkedin.com/in/eshwar-j-7b8854289/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=0F172A" alt="LinkedIn"/>
   </a>
-  &nbsp;
+  &nbsp;&nbsp;
   <a href="mailto:jeshwar.work@gmail.com">
     <img src="https://img.shields.io/badge/Email-2563EB?style=for-the-badge&logo=gmail&logoColor=white&color=0F172A" alt="Email"/>
   </a>
-  &nbsp;
+  &nbsp;&nbsp;
   <a href="https://eshwarj.me">
     <img src="https://img.shields.io/badge/Portfolio-00F0FF?style=for-the-badge&logo=vercel&logoColor=black&color=0F172A" alt="Portfolio"/>
   </a>
-  &nbsp;
+  &nbsp;&nbsp;
   <a href="https://instagram.com/eshwar_official">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&color=0F172A" alt="Instagram"/>
   </a>
