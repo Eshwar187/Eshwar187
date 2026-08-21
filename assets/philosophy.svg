@@ -2,83 +2,67 @@
   <defs>
     <linearGradient id="ph-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#020617"/>
-      <stop offset="50%" stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0B0E28"/>
+      <stop offset="100%" stop-color="#090D16"/>
     </linearGradient>
 
-    <linearGradient id="ph-border" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2"/>
+    <linearGradient id="border-glow-ph" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#B026FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.3"/>
     </linearGradient>
+
+    <radialGradient id="purple-spot" cx="80%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#B026FF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#B026FF" stop-opacity="0"/>
+    </radialGradient>
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&amp;family=Inter:ital,wght@0,600;0,800;1,400&amp;display=swap');
-
-      .quote {
-        font-family: 'Inter', sans-serif;
-        font-style: italic;
-        font-size: 15px;
-        fill: #E2E8F0;
-      }
-
-      .author {
-        font-family: 'Fira Code', monospace;
-        font-size: 12px;
-        fill: #38BDF8;
-      }
-
-      .pillar-title {
-        font-family: 'Inter', sans-serif;
+      .hdr-main {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         font-weight: 800;
         font-size: 13px;
         fill: #FFFFFF;
+        letter-spacing: 1.5px;
       }
-
-      .pillar-sub {
-        font-family: 'Inter', sans-serif;
-        font-size: 11px;
-        fill: #94A3B8;
+      .quote-txt {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-style: italic;
+        font-size: 16px;
+        fill: #F8FAFC;
+        line-height: 1.5;
+      }
+      .author {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        fill: #00F0FF;
+        letter-spacing: 1px;
       }
     </style>
   </defs>
 
   <rect width="920" height="180" rx="16" fill="url(#ph-bg)"/>
+  <rect width="920" height="180" rx="16" fill="url(#purple-spot)"/>
 
-  <!-- Top Quote Banner -->
-  <g transform="translate(460, 42)" text-anchor="middle">
-    <text class="quote">“Simplicity is prerequisite for reliability. Complex systems evolve from simple systems that worked.”</text>
-    <text y="24" class="author">— Edsger W. Dijkstra • System Architecture Principle</text>
-  </g>
+  <!-- Top Title -->
+  <circle cx="30" cy="25" r="4" fill="#00F0FF"/>
+  <text x="44" y="29" class="hdr-main">ENGINEERING PHILOSOPHY &amp; CORE BELIEF</text>
 
-  <line x1="60" y1="90" x2="860" y2="90" stroke="#1E293B" stroke-width="1"/>
+  <!-- Large Decorative Quotation Mark -->
+  <text x="35" y="105" font-family="serif" font-size="80" fill="#B026FF" fill-opacity="0.15">“</text>
 
-  <!-- 3 Pillar Columns -->
-  <g transform="translate(0, 105)">
-    <!-- Column 1 -->
-    <g transform="translate(60, 0)">
-      <circle cx="12" cy="14" r="5" fill="#38BDF8"/>
-      <text x="26" y="18" class="pillar-title">🧱 Modularity</text>
-      <text x="26" y="36" class="pillar-sub">Decoupled systems with explicit boundaries</text>
-      <text x="26" y="50" class="pillar-sub">minimize cognitive load and blast radius.</text>
-    </g>
+  <!-- Quote Lines -->
+  <text x="65" y="78" class="quote-txt">
+    “Simplicity is prerequisite for reliability. Software engineering is not about writing code —
+  </text>
+  <text x="65" y="104" class="quote-txt">
+    it is about controlling complexity through system architecture.”
+  </text>
 
-    <!-- Column 2 -->
-    <g transform="translate(340, 0)">
-      <circle cx="12" cy="14" r="5" fill="#8B5CF6"/>
-      <text x="26" y="18" class="pillar-title">🚀 Observability</text>
-      <text x="26" y="36" class="pillar-sub">Structured telemetry and metrics enable</text>
-      <text x="26" y="50" class="pillar-sub">immediate operational diagnostics.</text>
-    </g>
+  <!-- Author Attribution -->
+  <text x="65" y="145" class="author">— ESHWAR J <tspan fill="#64748B" font-weight="400">(@eshwar187)</tspan></text>
 
-    <!-- Column 3 -->
-    <g transform="translate(620, 0)">
-      <circle cx="12" cy="14" r="5" fill="#10B981"/>
-      <text x="26" y="18" class="pillar-title">⚡ Automation</text>
-      <text x="26" y="36" class="pillar-sub">Automate build, test, and release flows</text>
-      <text x="26" y="50" class="pillar-sub">for zero-downtime reliability.</text>
-    </g>
-  </g>
-
-  <rect width="920" height="180" rx="16" fill="none" stroke="url(#ph-border)" stroke-width="1.5"/>
+  <!-- Outer Glow Frame -->
+  <rect width="920" height="180" rx="16" fill="none" stroke="url(#border-glow-ph)" stroke-width="1.5"/>
 </svg>

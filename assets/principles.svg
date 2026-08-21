@@ -2,100 +2,96 @@
   <defs>
     <linearGradient id="p-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#020617"/>
-      <stop offset="100%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#0B0E28"/>
+      <stop offset="100%" stop-color="#090D16"/>
     </linearGradient>
 
-    <linearGradient id="card-glass" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.75"/>
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.85"/>
+    <linearGradient id="card-glass-p" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
     </linearGradient>
 
     <linearGradient id="border-glow-p" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5"/>
-      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2"/>
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#B026FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.3"/>
     </linearGradient>
 
-    <filter id="p-glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+    <radialGradient id="cyan-spot" cx="15%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </radialGradient>
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
-      
-      .p-title {
-        font-family: 'Inter', sans-serif;
+      .hdr-main {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         font-weight: 800;
-        font-size: 15px;
+        font-size: 13px;
         fill: #FFFFFF;
+        letter-spacing: 1.5px;
       }
-
+      .p-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+      }
       .p-desc {
-        font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 11px;
         fill: #94A3B8;
-        line-height: 1.5;
+        line-height: 1.4;
       }
     </style>
   </defs>
 
+  <!-- Base Container -->
   <rect width="920" height="240" rx="16" fill="url(#p-bg)"/>
+  <rect width="920" height="240" rx="16" fill="url(#cyan-spot)"/>
 
-  <!-- 2x2 Grid Layout -->
+  <!-- Top Title Bar -->
+  <circle cx="30" cy="25" r="4" fill="#00F0FF"/>
+  <text x="44" y="29" class="hdr-main">ENGINEERING PRINCIPLES &amp; ARCHITECTURAL MANIFESTO</text>
 
-  <!-- Panel 1: Scalability First -->
-  <g transform="translate(20, 20)">
-    <rect width="430" height="92" rx="10" fill="url(#card-glass)" stroke="url(#border-glow-p)" stroke-width="1.2"/>
-    <g transform="translate(20, 20)">
-      <circle cx="16" cy="16" r="16" fill="#2563EB" fill-opacity="0.2"/>
-      <text x="11" y="22" font-family="'Inter', sans-serif" font-size="16">⚡</text>
-      
-      <text x="44" y="16" class="p-title">Scalability First</text>
-      <text x="44" y="36" class="p-desc">Designing systems for exponential load, stateless microservices,</text>
-      <text x="44" y="52" class="p-desc">intelligent caching, and sub-50ms p99 latency targets.</text>
-    </g>
+  <!-- Panel 1: Exponential Scalability -->
+  <g transform="translate(20, 42)">
+    <rect width="430" height="84" rx="10" fill="url(#card-glass-p)" stroke="url(#border-glow-p)" stroke-width="1.2"/>
+    <circle cx="32" cy="42" r="14" fill="#00F0FF" fill-opacity="0.2"/>
+    <text x="26" y="47" font-family="sans-serif" font-size="14">⚡</text>
+    <text x="56" y="34" class="p-title" fill="#00F0FF">EXPONENTIAL SCALABILITY</text>
+    <text x="56" y="52" class="p-desc">Sub-50ms p99 latency target, stateless microservice mesh,</text>
+    <text x="56" y="66" class="p-desc">distributed memory caching, and zero single-points-of-failure.</text>
   </g>
 
-  <!-- Panel 2: Systems Thinking -->
-  <g transform="translate(470, 20)">
-    <rect width="430" height="92" rx="10" fill="url(#card-glass)" stroke="url(#border-glow-p)" stroke-width="1.2"/>
-    <g transform="translate(20, 20)">
-      <circle cx="16" cy="16" r="16" fill="#8B5CF6" fill-opacity="0.2"/>
-      <text x="11" y="22" font-family="'Inter', sans-serif" font-size="16">🧠</text>
-
-      <text x="44" y="16" class="p-title">Systems Thinking</text>
-      <text x="44" y="36" class="p-desc">Holistic engineering across AI model orchestration, distributed</text>
-      <text x="44" y="52" class="p-desc">event buses, database isolation, and client render loops.</text>
-    </g>
+  <!-- Panel 2: System Integrity & AI -->
+  <g transform="translate(470, 42)">
+    <rect width="430" height="84" rx="10" fill="url(#card-glass-p)" stroke="url(#border-glow-p)" stroke-width="1.2"/>
+    <circle cx="32" cy="42" r="14" fill="#B026FF" fill-opacity="0.2"/>
+    <text x="26" y="47" font-family="sans-serif" font-size="14">🧠</text>
+    <text x="56" y="34" class="p-title" fill="#B026FF">SYSTEM INTEGRITY &amp; AI INTELLIGENCE</text>
+    <text x="56" y="52" class="p-desc">Autonomous multi-agent orchestration, RAG vector graphs,</text>
+    <text x="56" y="66" class="p-desc">event-driven message buses, and resilient model pipelines.</text>
   </g>
 
-  <!-- Panel 3: Clean Architecture -->
-  <g transform="translate(20, 128)">
-    <rect width="430" height="92" rx="10" fill="url(#card-glass)" stroke="url(#border-glow-p)" stroke-width="1.2"/>
-    <g transform="translate(20, 20)">
-      <circle cx="16" cy="16" r="16" fill="#38BDF8" fill-opacity="0.2"/>
-      <text x="11" y="22" font-family="'Inter', sans-serif" font-size="16">🛡️</text>
-
-      <text x="44" y="16" class="p-title">Clean Architecture</text>
-      <text x="44" y="36" class="p-desc">Strict type-safety, domain-driven boundaries, comprehensive</text>
-      <text x="44" y="52" class="p-desc">automated test suites, and defensive runtime patterns.</text>
-    </g>
+  <!-- Panel 3: Defensive Clean Code -->
+  <g transform="translate(20, 136)">
+    <rect width="430" height="84" rx="10" fill="url(#card-glass-p)" stroke="url(#border-glow-p)" stroke-width="1.2"/>
+    <circle cx="32" cy="42" r="14" fill="#38BDF8" fill-opacity="0.2"/>
+    <text x="26" y="47" font-family="sans-serif" font-size="14">🛡️</text>
+    <text x="56" y="34" class="p-title" fill="#38BDF8">DEFENSIVE CLEAN ARCHITECTURE</text>
+    <text x="56" y="52" class="p-desc">Strict end-to-end type safety, domain-driven boundaries,</text>
+    <text x="56" y="66" class="p-desc">100% automated test coverage, and self-healing error recovery.</text>
   </g>
 
-  <!-- Panel 4: Velocity & Precision -->
-  <g transform="translate(470, 128)">
-    <rect width="430" height="92" rx="10" fill="url(#card-glass)" stroke="url(#border-glow-p)" stroke-width="1.2"/>
-    <g transform="translate(20, 20)">
-      <circle cx="16" cy="16" r="16" fill="#10B981" fill-opacity="0.2"/>
-      <text x="11" y="22" font-family="'Inter', sans-serif" font-size="16">🚀</text>
-
-      <text x="44" y="16" class="p-title">Velocity &amp; Precision</text>
-      <text x="44" y="36" class="p-desc">Fast iterative delivery backed by GitOps, zero-downtime</text>
-      <text x="44" y="52" class="p-desc">deployments, structured telemetry, and automated CI/CD.</text>
-    </g>
+  <!-- Panel 4: GitOps Velocity -->
+  <g transform="translate(470, 136)">
+    <rect width="430" height="84" rx="10" fill="url(#card-glass-p)" stroke="url(#border-glow-p)" stroke-width="1.2"/>
+    <circle cx="32" cy="42" r="14" fill="#10B981" fill-opacity="0.2"/>
+    <text x="26" y="47" font-family="sans-serif" font-size="14">🚀</text>
+    <text x="56" y="34" class="p-title" fill="#10B981">GITOPS VELOCITY &amp; PRECISION</text>
+    <text x="56" y="52" class="p-desc">Zero-downtime blue/green deployments, automated CI/CD,</text>
+    <text x="56" y="66" class="p-desc">real-time distributed telemetry, and instant rollback safety.</text>
   </g>
 
+  <!-- Outer Glow Frame -->
   <rect width="920" height="240" rx="16" fill="none" stroke="url(#border-glow-p)" stroke-width="1.5"/>
 </svg>

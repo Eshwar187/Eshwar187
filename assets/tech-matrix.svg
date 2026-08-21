@@ -6,172 +6,142 @@
       <stop offset="100%" stop-color="#090D16"/>
     </linearGradient>
 
-    <linearGradient id="tm-card" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    <linearGradient id="tm-glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
     </linearGradient>
 
-    <linearGradient id="tm-border" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.2"/>
+    <linearGradient id="border-glow-tm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#B026FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.3"/>
     </linearGradient>
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&amp;family=Inter:wght@400;600;700;800&amp;display=swap');
-
-      .cat-title {
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
+      .hdr-main {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 800;
         font-size: 13px;
-        fill: #38BDF8;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+        fill: #FFFFFF;
+        letter-spacing: 1.5px;
       }
-
-      .tech-pill {
-        font-family: 'Fira Code', monospace;
+      .col-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+      .tech-item {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         font-size: 11px;
+        fill: #E2E8F0;
         font-weight: 600;
+      }
+      .tech-sub {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 9px;
+        fill: #64748B;
       }
     </style>
   </defs>
 
+  <!-- Base Container -->
   <rect width="920" height="280" rx="16" fill="url(#tm-bg)"/>
 
-  <!-- 3x2 Category Grid -->
+  <!-- Top Title Bar -->
+  <circle cx="30" cy="25" r="4" fill="#B026FF"/>
+  <text x="44" y="29" class="hdr-main">TECHNOLOGY MATRIX &amp; PRODUCTION STACK</text>
 
-  <!-- Cat 1: Languages -->
-  <g transform="translate(20, 20)">
-    <rect width="280" height="110" rx="10" fill="url(#tm-card)" stroke="url(#tm-border)" stroke-width="1"/>
-    <g transform="translate(16, 16)">
-      <text x="0" y="12" class="cat-title">💻 Core Languages</text>
-      
-      <g transform="translate(0, 28)">
-        <rect x="0" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#3178C6" stroke-width="1"/>
-        <text x="10" y="16" class="tech-pill" fill="#60A5FA">TypeScript</text>
+  <!-- 4 Columns Grid -->
 
-        <rect x="125" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1"/>
-        <text x="135" y="16" class="tech-pill" fill="#38BDF8">Go (Golang)</text>
+  <!-- Column 1: CORE LANGUAGES (X: 20) -->
+  <rect x="20" y="45" width="205" height="215" rx="10" fill="url(#tm-glass)" stroke="url(#border-glow-tm)" stroke-width="1"/>
+  <text x="35" y="70" class="col-title" fill="#00F0FF">&lt;/&gt; LANGUAGES</text>
 
-        <rect x="0" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#3572A5" stroke-width="1"/>
-        <text x="10" y="48" class="tech-pill" fill="#93C5FD">Python</text>
+  <!-- Item 1: TypeScript -->
+  <text x="35" y="96" class="tech-item">TypeScript</text>
+  <text x="175" y="96" class="tech-sub" text-anchor="end">23 Repos</text>
+  <rect x="35" y="104" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="35" y="104" width="135" height="4" rx="2" fill="#00F0FF"/>
 
-        <rect x="125" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#F97316" stroke-width="1"/>
-        <text x="135" y="48" class="tech-pill" fill="#FB923C">Rust</text>
-      </g>
-    </g>
-  </g>
+  <!-- Item 2: JavaScript -->
+  <text x="35" y="132" class="tech-item">JavaScript</text>
+  <text x="175" y="132" class="tech-sub" text-anchor="end">23 Repos</text>
+  <rect x="35" y="140" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="35" y="140" width="135" height="4" rx="2" fill="#F7DF1E"/>
 
-  <!-- Cat 2: Frontend & UI -->
-  <g transform="translate(320, 20)">
-    <rect width="280" height="110" rx="10" fill="url(#tm-card)" stroke="url(#tm-border)" stroke-width="1"/>
-    <g transform="translate(16, 16)">
-      <text x="0" y="12" class="cat-title">🎨 Frontend &amp; UI</text>
+  <!-- Item 3: Python -->
+  <text x="35" y="168" class="tech-item">Python</text>
+  <text x="175" y="168" class="tech-sub" text-anchor="end">7 Repos</text>
+  <rect x="35" y="176" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="35" y="176" width="95" height="4" rx="2" fill="#3776AB"/>
 
-      <g transform="translate(0, 28)">
-        <rect x="0" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#FFFFFF" stroke-width="0.8"/>
-        <text x="10" y="16" class="tech-pill" fill="#FFFFFF">Next.js 14/15</text>
+  <!-- Item 4: C / Systems -->
+  <text x="35" y="204" class="tech-item">C / Systems</text>
+  <text x="175" y="204" class="tech-sub" text-anchor="end">5 Repos</text>
+  <rect x="35" y="212" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="35" y="212" width="75" height="4" rx="2" fill="#A8B9CC"/>
 
-        <rect x="125" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#61DAFB" stroke-width="1"/>
-        <text x="135" y="16" class="tech-pill" fill="#61DAFB">React 19</text>
+  <!-- Column 2: CLOUD & INFRA (X: 242) -->
+  <rect x="242" y="45" width="205" height="215" rx="10" fill="url(#tm-glass)" stroke="url(#border-glow-tm)" stroke-width="1"/>
+  <text x="257" y="70" class="col-title" fill="#B026FF">☁️ CLOUD &amp; INFRA</text>
 
-        <rect x="0" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#06B6D4" stroke-width="1"/>
-        <text x="10" y="48" class="tech-pill" fill="#22D3EE">Tailwind v4</text>
+  <text x="257" y="96" class="tech-item">Docker Automation</text>
+  <rect x="257" y="104" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="257" y="104" width="140" height="4" rx="2" fill="#B026FF"/>
 
-        <rect x="125" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#8B5CF6" stroke-width="1"/>
-        <text x="135" y="48" class="tech-pill" fill="#A78BFA">Framer Motion</text>
-      </g>
-    </g>
-  </g>
+  <text x="257" y="132" class="tech-item">Kubernetes (K8s)</text>
+  <rect x="257" y="140" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="257" y="140" width="125" height="4" rx="2" fill="#38BDF8"/>
 
-  <!-- Cat 3: Backend & Systems -->
-  <g transform="translate(620, 20)">
-    <rect width="280" height="110" rx="10" fill="url(#tm-card)" stroke="url(#tm-border)" stroke-width="1"/>
-    <g transform="translate(16, 16)">
-      <text x="0" y="12" class="cat-title">⚙️ Backend &amp; APIs</text>
+  <text x="257" y="168" class="tech-item">AWS Cloud Infra</text>
+  <rect x="257" y="176" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="257" y="176" width="130" height="4" rx="2" fill="#FF9900"/>
 
-      <g transform="translate(0, 28)">
-        <rect x="0" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#5FA04E" stroke-width="1"/>
-        <text x="10" y="16" class="tech-pill" fill="#4ADE80">Node.js / Bun</text>
+  <text x="257" y="204" class="tech-item">GitHub Actions CI/CD</text>
+  <rect x="257" y="212" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="257" y="212" width="145" height="4" rx="2" fill="#2088FF"/>
 
-        <rect x="125" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#E535AB" stroke-width="1"/>
-        <text x="135" y="16" class="tech-pill" fill="#F472B6">GraphQL / gRPC</text>
+  <!-- Column 3: AI & MACHINE LEARNING (X: 464) -->
+  <rect x="464" y="45" width="205" height="215" rx="10" fill="url(#tm-glass)" stroke="url(#border-glow-tm)" stroke-width="1"/>
+  <text x="479" y="70" class="col-title" fill="#10B981">🧠 AI &amp; INTELLIGENCE</text>
 
-        <rect x="0" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#009688" stroke-width="1"/>
-        <text x="10" y="48" class="tech-pill" fill="#2DD4BF">FastAPI</text>
+  <text x="479" y="96" class="tech-item">Multi-Agent LLMs</text>
+  <rect x="479" y="104" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="479" y="104" width="140" height="4" rx="2" fill="#10B981"/>
 
-        <rect x="125" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#2563EB" stroke-width="1"/>
-        <text x="135" y="48" class="tech-pill" fill="#60A5FA">Kafka / NATS</text>
-      </g>
-    </g>
-  </g>
+  <text x="479" y="132" class="tech-item">RAG &amp; Vector DBs</text>
+  <rect x="479" y="140" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="479" y="140" width="130" height="4" rx="2" fill="#34D399"/>
 
-  <!-- Cat 4: AI & Machine Learning -->
-  <g transform="translate(20, 150)">
-    <rect width="280" height="110" rx="10" fill="url(#tm-card)" stroke="url(#tm-border)" stroke-width="1"/>
-    <g transform="translate(16, 16)">
-      <text x="0" y="12" class="cat-title" fill="#8B5CF6">🧠 AI &amp; Machine Learning</text>
+  <text x="479" y="168" class="tech-item">PyTorch Models</text>
+  <rect x="479" y="176" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="479" y="176" width="115" height="4" rx="2" fill="#EE4C2C"/>
 
-      <g transform="translate(0, 28)">
-        <rect x="0" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#EE4C2C" stroke-width="1"/>
-        <text x="10" y="16" class="tech-pill" fill="#F87171">PyTorch</text>
+  <text x="479" y="204" class="tech-item">OpenAI / Gemini APIs</text>
+  <rect x="479" y="212" width="145" height="4" rx="2" fill="#0F172A"/>
+  <rect x="479" y="212" width="145" height="4" rx="2" fill="#10A37F"/>
 
-        <rect x="125" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="1"/>
-        <text x="135" y="16" class="tech-pill" fill="#34D399">OpenAI / Claude</text>
+  <!-- Column 4: WEB & DATABASES (X: 686) -->
+  <rect x="686" y="45" width="214" height="215" rx="10" fill="url(#tm-glass)" stroke="url(#border-glow-tm)" stroke-width="1"/>
+  <text x="701" y="70" class="col-title" fill="#60A5FA">🗄️ WEB &amp; DATA</text>
 
-        <rect x="0" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#8B5CF6" stroke-width="1"/>
-        <text x="10" y="48" class="tech-pill" fill="#C084FC">LangChain / RAG</text>
+  <text x="701" y="96" class="tech-item">Next.js 15 &amp; React 19</text>
+  <rect x="701" y="104" width="154" height="4" rx="2" fill="#0F172A"/>
+  <rect x="701" y="104" width="150" height="4" rx="2" fill="#60A5FA"/>
 
-        <rect x="125" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1"/>
-        <text x="135" y="48" class="tech-pill" fill="#38BDF8">Pinecone / Qdrant</text>
-      </g>
-    </g>
-  </g>
+  <text x="701" y="132" class="tech-item">PostgreSQL &amp; Prisma</text>
+  <rect x="701" y="140" width="154" height="4" rx="2" fill="#0F172A"/>
+  <rect x="701" y="140" width="140" height="4" rx="2" fill="#4169E1"/>
 
-  <!-- Cat 5: Cloud & Infrastructure -->
-  <g transform="translate(320, 150)">
-    <rect width="280" height="110" rx="10" fill="url(#tm-card)" stroke="url(#tm-border)" stroke-width="1"/>
-    <g transform="translate(16, 16)">
-      <text x="0" y="12" class="cat-title" fill="#38BDF8">☁️ Cloud &amp; DevOps</text>
+  <text x="701" y="168" class="tech-item">Node.js Microservices</text>
+  <rect x="701" y="176" width="154" height="4" rx="2" fill="#0F172A"/>
+  <rect x="701" y="176" width="145" height="4" rx="2" fill="#5FA04E"/>
 
-      <g transform="translate(0, 28)">
-        <rect x="0" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#FF9900" stroke-width="1"/>
-        <text x="10" y="16" class="tech-pill" fill="#FBBF24">AWS Cloud</text>
+  <text x="701" y="204" class="tech-item">Tailwind v4 / GraphQL</text>
+  <rect x="701" y="212" width="154" height="4" rx="2" fill="#0F172A"/>
+  <rect x="701" y="212" width="135" height="4" rx="2" fill="#38BDF8"/>
 
-        <rect x="125" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#2496ED" stroke-width="1"/>
-        <text x="135" y="16" class="tech-pill" fill="#60A5FA">Docker Engine</text>
-
-        <rect x="0" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#326CE5" stroke-width="1"/>
-        <text x="10" y="48" class="tech-pill" fill="#93C5FD">Kubernetes</text>
-
-        <rect x="125" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#844FBA" stroke-width="1"/>
-        <text x="135" y="48" class="tech-pill" fill="#C084FC">Terraform / IaC</text>
-      </g>
-    </g>
-  </g>
-
-  <!-- Cat 6: Databases & Storage -->
-  <g transform="translate(620, 150)">
-    <rect width="280" height="110" rx="10" fill="url(#tm-card)" stroke="url(#tm-border)" stroke-width="1"/>
-    <g transform="translate(16, 16)">
-      <text x="0" y="12" class="cat-title" fill="#10B981">🗄️ Databases &amp; Storage</text>
-
-      <g transform="translate(0, 28)">
-        <rect x="0" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#336791" stroke-width="1"/>
-        <text x="10" y="16" class="tech-pill" fill="#60A5FA">PostgreSQL</text>
-
-        <rect x="125" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#DC2626" stroke-width="1"/>
-        <text x="135" y="16" class="tech-pill" fill="#F87171">Redis Cluster</text>
-
-        <rect x="0" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#47A248" stroke-width="1"/>
-        <text x="10" y="48" class="tech-pill" fill="#4ADE80">MongoDB</text>
-
-        <rect x="125" y="32" width="115" height="24" rx="6" fill="#0F172A" stroke="#F59E0B" stroke-width="1"/>
-        <text x="135" y="48" class="tech-pill" fill="#FBBF24">ClickHouse</text>
-      </g>
-    </g>
-  </g>
-
-  <rect width="920" height="280" rx="16" fill="none" stroke="url(#tm-border)" stroke-width="1.5"/>
+  <!-- Outer Frame -->
+  <rect width="920" height="280" rx="16" fill="none" stroke="url(#border-glow-tm)" stroke-width="1.5"/>
 </svg>
