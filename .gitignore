@@ -1,0 +1,4 @@
+# Verification artifacts
+verification_renders/
+__pycache__/
+*.pyc

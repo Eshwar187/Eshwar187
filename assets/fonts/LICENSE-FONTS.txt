@@ -1,0 +1,16 @@
+FONTS AND ASSETS LICENSING
+
+1. Space Grotesk Font
+- Source: Florian Karsten (https://github.com/floriankarsten/space-grotesk)
+- License: SIL Open Font License, Version 1.1 (OFL-1.1)
+- Copyright: (c) 2020 The Space Grotesk Project Authors (https://github.com/floriankarsten/space-grotesk)
+
+2. JetBrains Mono Font
+- Source: JetBrains s.r.o. / Philipp Nurullin (https://github.com/JetBrains/JetBrainsMono)
+- License: SIL Open Font License, Version 1.1 (OFL-1.1)
+- Copyright: (c) 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+
+3. Simple Icons
+- Source: Simple Icons (https://simpleicons.org / https://github.com/simple-icons/simple-icons)
+- License: CC0 1.0 Universal (Public Domain Dedication)
+- Brand icons used: Python, FastAPI, Svelte, TypeScript, JavaScript, Node.js, PostgreSQL, MongoDB, Docker, GitHub Actions, Google Cloud, LinkedIn, YouTube, Instagram, GitHub. All brand icons remain property of their respective trademark owners.
